@@ -1,0 +1,13 @@
+* text=auto
+
+# Binary assets - never diff or merge as text
+*.step binary
+*.stp  binary
+*.stl  binary
+*.blend binary
+*.mp4  binary
+*.pdf  binary
+*.png  binary
+
+# Exclude heavy source from `git archive` tarballs
+manufacturing/**/renders/** export-ignore
