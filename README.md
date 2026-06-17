@@ -36,7 +36,7 @@ Higher tiers are a superset of lower ones. A `3.x` chip still mounts in a `2.x` 
 
 1. **Pick a tier** that matches what you want to ship (start at `1.x` or `2.x`).
 2. **Read the spec** for that tier in [`spec/`](spec/) and preserve the [core invariants](spec/README.md#core-invariants): 40 mm diameter, 3.6 mm thickness, polarized orientation.
-3. **Build it.** A `1.x` chip needs only a 3D printer. A `3.x` chip uses the [reference PCB](hardware/pcb-v3/) as a starting point.
+3. **Build it.** A `1.x` chip needs only a 3D printer. For a `2.x` magnetic chip, start from the reference CAD - [`chip.step`](hardware/makerchip-2.0/chip.step) and [`dock.step`](hardware/makerchip-2.0/dock.step), or fork the editable [public Onshape project](https://cad.onshape.com/documents/66dffec1c63767f9fad75111/w/110fc95ea174063827d47415/e/8618be80ab8abbf698550313). A `3.x` chip uses the [reference PCB](hardware/pcb-v3/) as a starting point.
 4. **Tag your design** `MAJOR.MINOR[-variant]` (for example `MakerChip-3.1-LED-OG`) so others know what it interoperates with.
 
 ## Documentation
