@@ -4,6 +4,7 @@
 *.step binary
 *.stp  binary
 *.stl  binary
+*.3mf  binary
 *.blend binary
 *.mp4  binary
 *.gif  binary

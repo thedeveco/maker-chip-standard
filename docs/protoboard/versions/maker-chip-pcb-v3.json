@@ -1,0 +1,4731 @@
+{
+  "schemaVersion": "1.10.0",
+  "board": {
+    "metadata": {
+      "id": "Qy7JVPyQZbhWuvUfJOMx8",
+      "name": "Maker Chip PCB - V3",
+      "author": "Kevin Fehr",
+      "description": "A poker chip sized PCB device with 3 stacked layers (2x 0.8mm + 1x 2mm middle). Features 4 white LEDs for internal glow effect, powered via pogo pin interface. Middle layer contains 15mm magnets and component cutouts.",
+      "createdAt": 1773807557620,
+      "updatedAt": 1775254790354,
+      "version": 22
+    },
+    "partsById": {
+      "mpjDjlaA2KYMB05qyPX1R": {
+        "id": "mpjDjlaA2KYMB05qyPX1R",
+        "templateId": "basic-mpjDjlaA2KYMB05qyPX1R",
+        "nickname": "White LED 1",
+        "position": {
+          "x": -40,
+          "y": 640
+        },
+        "interfacesById": {
+          "a3412d07-9b1e-4d98-b628-eac3d78b49f0": {
+            "id": "a3412d07-9b1e-4d98-b628-eac3d78b49f0",
+            "interfaceDefinitionId": "led_power",
+            "protoPartId": "mpjDjlaA2KYMB05qyPX1R",
+            "name": "LED Power",
+            "displayName": "LED Power",
+            "implementedRole": "input"
+          }
+        },
+        "allocationsById": {
+          "a759cb4c-f350-4f0b-90c6-ab28bb0832f8": {
+            "id": "a759cb4c-f350-4f0b-90c6-ab28bb0832f8",
+            "resourceFunctionId": "anode.VCC",
+            "interfaceFunctionId": "a3412d07-9b1e-4d98-b628-eac3d78b49f0.VCC"
+          },
+          "adf70176-4227-4f1a-8062-c9a48898bc85": {
+            "id": "adf70176-4227-4f1a-8062-c9a48898bc85",
+            "resourceFunctionId": "cathode.GND",
+            "interfaceFunctionId": "a3412d07-9b1e-4d98-b628-eac3d78b49f0.GND"
+          }
+        },
+        "lastModified": 1776748989374,
+        "stateVersion": 27,
+        "custom": {
+          "fields": {}
+        }
+      },
+      "fFVpV0slY_0ycHSXpgPcp": {
+        "id": "fFVpV0slY_0ycHSXpgPcp",
+        "templateId": "basic-fFVpV0slY_0ycHSXpgPcp",
+        "nickname": "120Ω Resistor 1",
+        "position": {
+          "x": -40,
+          "y": 840
+        },
+        "interfacesById": {
+          "1a6ae76e-6480-45be-9bf5-92fca2066c5a": {
+            "id": "1a6ae76e-6480-45be-9bf5-92fca2066c5a",
+            "interfaceDefinitionId": "resistor_connection",
+            "protoPartId": "fFVpV0slY_0ycHSXpgPcp",
+            "name": "Resistor Terminals",
+            "displayName": "Resistor Terminals",
+            "implementedRole": "peer"
+          }
+        },
+        "allocationsById": {
+          "ebd92920-17a5-44f0-86a2-a7b608b6c433": {
+            "id": "ebd92920-17a5-44f0-86a2-a7b608b6c433",
+            "resourceFunctionId": "terminal_1.RESISTOR_IN",
+            "interfaceFunctionId": "1a6ae76e-6480-45be-9bf5-92fca2066c5a.RESISTOR_IN"
+          },
+          "1a613a2b-0120-4e34-b180-835c6801a0e2": {
+            "id": "1a613a2b-0120-4e34-b180-835c6801a0e2",
+            "resourceFunctionId": "terminal_2.RESISTOR_OUT",
+            "interfaceFunctionId": "1a6ae76e-6480-45be-9bf5-92fca2066c5a.RESISTOR_OUT"
+          }
+        },
+        "lastModified": 1776748989374,
+        "stateVersion": 26,
+        "custom": {
+          "fields": {}
+        }
+      },
+      "842a48f5-d382-4bf9-9696-8d534720b51a": {
+        "id": "842a48f5-d382-4bf9-9696-8d534720b51a",
+        "templateId": "basic-mpjDjlaA2KYMB05qyPX1R",
+        "nickname": "White LED 2",
+        "position": {
+          "x": 210,
+          "y": 640
+        },
+        "interfacesById": {
+          "558d9218-7289-4ef0-ab45-c6b4034866fc": {
+            "id": "558d9218-7289-4ef0-ab45-c6b4034866fc",
+            "interfaceDefinitionId": "led_power",
+            "protoPartId": "842a48f5-d382-4bf9-9696-8d534720b51a",
+            "name": "LED Power",
+            "displayName": "LED Power",
+            "implementedRole": "input"
+          }
+        },
+        "allocationsById": {
+          "21c1698a-e0e6-4d86-aae1-6ca068eff31e": {
+            "id": "21c1698a-e0e6-4d86-aae1-6ca068eff31e",
+            "resourceFunctionId": "anode.VCC",
+            "interfaceFunctionId": "558d9218-7289-4ef0-ab45-c6b4034866fc.VCC"
+          },
+          "8208d1e9-66ca-4ec2-9e3f-5b716b7a2e15": {
+            "id": "8208d1e9-66ca-4ec2-9e3f-5b716b7a2e15",
+            "resourceFunctionId": "cathode.GND",
+            "interfaceFunctionId": "558d9218-7289-4ef0-ab45-c6b4034866fc.GND"
+          }
+        },
+        "lastModified": 1776748989374,
+        "stateVersion": 23,
+        "custom": {
+          "fields": {}
+        }
+      },
+      "21079c84-8285-46f9-b35b-f2867e11d58a": {
+        "id": "21079c84-8285-46f9-b35b-f2867e11d58a",
+        "templateId": "basic-mpjDjlaA2KYMB05qyPX1R",
+        "nickname": "White LED 3",
+        "position": {
+          "x": 680,
+          "y": 620
+        },
+        "interfacesById": {
+          "ceee3ddd-f3ca-404e-9fdf-576b0744fee3": {
+            "id": "ceee3ddd-f3ca-404e-9fdf-576b0744fee3",
+            "interfaceDefinitionId": "led_power",
+            "protoPartId": "21079c84-8285-46f9-b35b-f2867e11d58a",
+            "name": "LED Power",
+            "displayName": "LED Power",
+            "implementedRole": "input"
+          }
+        },
+        "allocationsById": {
+          "f80926ad-6a3e-44b8-bb84-cfcd4de81bb3": {
+            "id": "f80926ad-6a3e-44b8-bb84-cfcd4de81bb3",
+            "resourceFunctionId": "anode.VCC",
+            "interfaceFunctionId": "ceee3ddd-f3ca-404e-9fdf-576b0744fee3.VCC"
+          },
+          "7c861ae1-d8d1-4a9e-a460-58b72bd79511": {
+            "id": "7c861ae1-d8d1-4a9e-a460-58b72bd79511",
+            "resourceFunctionId": "cathode.GND",
+            "interfaceFunctionId": "ceee3ddd-f3ca-404e-9fdf-576b0744fee3.GND"
+          }
+        },
+        "lastModified": 1776748989374,
+        "stateVersion": 23,
+        "custom": {
+          "fields": {}
+        }
+      },
+      "34f6db9f-f7ce-4249-b378-d6217756dcc3": {
+        "id": "34f6db9f-f7ce-4249-b378-d6217756dcc3",
+        "templateId": "basic-mpjDjlaA2KYMB05qyPX1R",
+        "nickname": "White LED 4",
+        "position": {
+          "x": 930,
+          "y": 620
+        },
+        "interfacesById": {
+          "044b49ed-d123-4067-97ba-0b17fb741473": {
+            "id": "044b49ed-d123-4067-97ba-0b17fb741473",
+            "interfaceDefinitionId": "led_power",
+            "protoPartId": "34f6db9f-f7ce-4249-b378-d6217756dcc3",
+            "name": "LED Power",
+            "displayName": "LED Power",
+            "implementedRole": "input"
+          }
+        },
+        "allocationsById": {
+          "68a6132a-2085-4219-b15c-1cf753138cf8": {
+            "id": "68a6132a-2085-4219-b15c-1cf753138cf8",
+            "resourceFunctionId": "anode.VCC",
+            "interfaceFunctionId": "044b49ed-d123-4067-97ba-0b17fb741473.VCC"
+          },
+          "484ee45f-25b3-4a64-ae3e-d554619d8213": {
+            "id": "484ee45f-25b3-4a64-ae3e-d554619d8213",
+            "resourceFunctionId": "cathode.GND",
+            "interfaceFunctionId": "044b49ed-d123-4067-97ba-0b17fb741473.GND"
+          }
+        },
+        "lastModified": 1776748989374,
+        "stateVersion": 24,
+        "custom": {
+          "fields": {}
+        }
+      },
+      "918fee80-83ac-4a44-922d-a1fe565b6da0": {
+        "id": "918fee80-83ac-4a44-922d-a1fe565b6da0",
+        "templateId": "basic-fFVpV0slY_0ycHSXpgPcp",
+        "nickname": "120Ω Resistor 2",
+        "position": {
+          "x": 210,
+          "y": 840
+        },
+        "interfacesById": {
+          "6a939c34-a6dc-4851-ab67-9c0a5b8ceb7e": {
+            "id": "6a939c34-a6dc-4851-ab67-9c0a5b8ceb7e",
+            "interfaceDefinitionId": "resistor_connection",
+            "protoPartId": "918fee80-83ac-4a44-922d-a1fe565b6da0",
+            "name": "Resistor Terminals",
+            "displayName": "Resistor Terminals",
+            "implementedRole": "peer"
+          }
+        },
+        "allocationsById": {
+          "37b8024e-7285-4375-ad49-89ef8b5177e7": {
+            "id": "37b8024e-7285-4375-ad49-89ef8b5177e7",
+            "resourceFunctionId": "terminal_1.RESISTOR_IN",
+            "interfaceFunctionId": "6a939c34-a6dc-4851-ab67-9c0a5b8ceb7e.RESISTOR_IN"
+          },
+          "703c6948-7809-40bf-8ab4-01bf4af42f29": {
+            "id": "703c6948-7809-40bf-8ab4-01bf4af42f29",
+            "resourceFunctionId": "terminal_2.RESISTOR_OUT",
+            "interfaceFunctionId": "6a939c34-a6dc-4851-ab67-9c0a5b8ceb7e.RESISTOR_OUT"
+          }
+        },
+        "lastModified": 1776748989374,
+        "stateVersion": 23,
+        "custom": {
+          "fields": {}
+        }
+      },
+      "08c5ed05-4ea4-46e9-a1fe-907d5e305e15": {
+        "id": "08c5ed05-4ea4-46e9-a1fe-907d5e305e15",
+        "templateId": "basic-fFVpV0slY_0ycHSXpgPcp",
+        "nickname": "120Ω Resistor 3",
+        "position": {
+          "x": 680,
+          "y": 820
+        },
+        "interfacesById": {
+          "3d82f729-77fd-47cf-a333-7070c6e4c354": {
+            "id": "3d82f729-77fd-47cf-a333-7070c6e4c354",
+            "interfaceDefinitionId": "resistor_connection",
+            "protoPartId": "08c5ed05-4ea4-46e9-a1fe-907d5e305e15",
+            "name": "Resistor Terminals",
+            "displayName": "Resistor Terminals",
+            "implementedRole": "peer"
+          }
+        },
+        "allocationsById": {
+          "fd74c73e-481d-40d6-8379-ad7128e01b82": {
+            "id": "fd74c73e-481d-40d6-8379-ad7128e01b82",
+            "resourceFunctionId": "terminal_1.RESISTOR_IN",
+            "interfaceFunctionId": "3d82f729-77fd-47cf-a333-7070c6e4c354.RESISTOR_IN"
+          },
+          "082375a8-557e-4351-847e-ed0cd837ca8b": {
+            "id": "082375a8-557e-4351-847e-ed0cd837ca8b",
+            "resourceFunctionId": "terminal_2.RESISTOR_OUT",
+            "interfaceFunctionId": "3d82f729-77fd-47cf-a333-7070c6e4c354.RESISTOR_OUT"
+          }
+        },
+        "lastModified": 1776748989374,
+        "stateVersion": 22,
+        "custom": {
+          "fields": {}
+        }
+      },
+      "30363942-21cd-47d1-9c1f-62e6f7072dd6": {
+        "id": "30363942-21cd-47d1-9c1f-62e6f7072dd6",
+        "templateId": "basic-fFVpV0slY_0ycHSXpgPcp",
+        "nickname": "120Ω Resistor 4",
+        "position": {
+          "x": 930,
+          "y": 820
+        },
+        "interfacesById": {
+          "a4278114-ab3e-4695-8aad-90094deafa6e": {
+            "id": "a4278114-ab3e-4695-8aad-90094deafa6e",
+            "interfaceDefinitionId": "resistor_connection",
+            "protoPartId": "30363942-21cd-47d1-9c1f-62e6f7072dd6",
+            "name": "Resistor Terminals",
+            "displayName": "Resistor Terminals",
+            "implementedRole": "peer"
+          }
+        },
+        "allocationsById": {
+          "60ed8f44-0d0a-401b-9460-25fa42914ace": {
+            "id": "60ed8f44-0d0a-401b-9460-25fa42914ace",
+            "resourceFunctionId": "terminal_1.RESISTOR_IN",
+            "interfaceFunctionId": "a4278114-ab3e-4695-8aad-90094deafa6e.RESISTOR_IN"
+          },
+          "87fdc1ae-84bc-46f7-980b-3d1173a37a7e": {
+            "id": "87fdc1ae-84bc-46f7-980b-3d1173a37a7e",
+            "resourceFunctionId": "terminal_2.RESISTOR_OUT",
+            "interfaceFunctionId": "a4278114-ab3e-4695-8aad-90094deafa6e.RESISTOR_OUT"
+          }
+        },
+        "lastModified": 1776748989374,
+        "stateVersion": 23,
+        "custom": {
+          "fields": {}
+        }
+      },
+      "NLkZFikHo6YDudwjzZbog": {
+        "id": "NLkZFikHo6YDudwjzZbog",
+        "templateId": "basic-NLkZFikHo6YDudwjzZbog",
+        "nickname": "Pad 1 - VCC (5V)",
+        "position": {
+          "x": 400,
+          "y": 0
+        },
+        "interfacesById": {
+          "ccd5005d-bbc0-42d0-9a68-403aa063a18c": {
+            "id": "ccd5005d-bbc0-42d0-9a68-403aa063a18c",
+            "interfaceDefinitionId": "power_output",
+            "protoPartId": "NLkZFikHo6YDudwjzZbog",
+            "name": "5V Power Output",
+            "displayName": "5V Power Output",
+            "implementedRole": "output"
+          }
+        },
+        "allocationsById": {
+          "bfa385b2-ed24-44c8-9231-95728917dbb2": {
+            "id": "bfa385b2-ed24-44c8-9231-95728917dbb2",
+            "resourceFunctionId": "vcc_pad.VCC_5V",
+            "interfaceFunctionId": "ccd5005d-bbc0-42d0-9a68-403aa063a18c.VCC_5V"
+          }
+        },
+        "lastModified": 1776748964351,
+        "stateVersion": 22,
+        "custom": {
+          "fields": {}
+        }
+      },
+      "848t6FXjZg-gFcYJHxtV4": {
+        "id": "848t6FXjZg-gFcYJHxtV4",
+        "templateId": "basic-848t6FXjZg-gFcYJHxtV4",
+        "nickname": "Pad 2 - GND",
+        "position": {
+          "x": 400,
+          "y": 1060
+        },
+        "interfacesById": {
+          "b51fb6e4-f38e-43e2-ac19-68159be271a2": {
+            "id": "b51fb6e4-f38e-43e2-ac19-68159be271a2",
+            "interfaceDefinitionId": "ground_connection",
+            "protoPartId": "848t6FXjZg-gFcYJHxtV4",
+            "name": "Ground Connection",
+            "displayName": "Ground Connection",
+            "implementedRole": "input"
+          }
+        },
+        "allocationsById": {
+          "23c1e5e4-5fb9-4175-8420-b857870363ff": {
+            "id": "23c1e5e4-5fb9-4175-8420-b857870363ff",
+            "resourceFunctionId": "gnd_pad.GND",
+            "interfaceFunctionId": "b51fb6e4-f38e-43e2-ac19-68159be271a2.GND"
+          }
+        },
+        "lastModified": 1776748964351,
+        "stateVersion": 23,
+        "custom": {
+          "fields": {}
+        }
+      },
+      "1AGk7mINFuKOXGWMz54X8": {
+        "id": "1AGk7mINFuKOXGWMz54X8",
+        "templateId": "basic-1AGk7mINFuKOXGWMz54X8",
+        "nickname": "ATtiny85 MCU",
+        "position": {
+          "x": 400,
+          "y": 300
+        },
+        "interfacesById": {
+          "d22bb8bc-c713-4673-9ff3-5fc6621c0321": {
+            "id": "d22bb8bc-c713-4673-9ff3-5fc6621c0321",
+            "interfaceDefinitionId": "data_io",
+            "protoPartId": "1AGk7mINFuKOXGWMz54X8",
+            "name": "DATA Interface",
+            "displayName": "DATA Interface",
+            "implementedRole": "input"
+          },
+          "a49de533-03b7-46da-b079-f2a2b2307ba7": {
+            "id": "a49de533-03b7-46da-b079-f2a2b2307ba7",
+            "interfaceDefinitionId": "clk_io",
+            "protoPartId": "1AGk7mINFuKOXGWMz54X8",
+            "name": "CLK Interface",
+            "displayName": "CLK Interface",
+            "implementedRole": "input"
+          },
+          "5564fd8d-8281-4161-9acf-3484fbc18241": {
+            "id": "5564fd8d-8281-4161-9acf-3484fbc18241",
+            "interfaceDefinitionId": "reset_io",
+            "protoPartId": "1AGk7mINFuKOXGWMz54X8",
+            "name": "RESET Interface",
+            "displayName": "RESET Interface",
+            "implementedRole": "input"
+          },
+          "cf264a68-c86d-4b1b-8188-3f85547d9f2a": {
+            "id": "cf264a68-c86d-4b1b-8188-3f85547d9f2a",
+            "interfaceDefinitionId": "miso_io",
+            "protoPartId": "1AGk7mINFuKOXGWMz54X8",
+            "name": "MISO Interface",
+            "displayName": "MISO Interface",
+            "implementedRole": "output"
+          },
+          "7a858347-5773-48c0-baf8-86bd31f49802": {
+            "id": "7a858347-5773-48c0-baf8-86bd31f49802",
+            "interfaceDefinitionId": "pwm_io",
+            "protoPartId": "1AGk7mINFuKOXGWMz54X8",
+            "name": "GPIO/PWM Interface",
+            "displayName": "GPIO/PWM Interface",
+            "implementedRole": "output"
+          },
+          "9d4ffa7d-acbd-4231-ad83-a9d1e2e186d1": {
+            "id": "9d4ffa7d-acbd-4231-ad83-a9d1e2e186d1",
+            "interfaceDefinitionId": "analog_io",
+            "protoPartId": "1AGk7mINFuKOXGWMz54X8",
+            "name": "ANALOG Interface",
+            "displayName": "ANALOG Interface",
+            "implementedRole": "input"
+          },
+          "fa549c87-2301-4695-8b1b-7476a8bde808": {
+            "id": "fa549c87-2301-4695-8b1b-7476a8bde808",
+            "interfaceDefinitionId": "mcu_power",
+            "protoPartId": "1AGk7mINFuKOXGWMz54X8",
+            "name": "MCU Power",
+            "displayName": "MCU Power",
+            "implementedRole": "input"
+          },
+          "640c078b-c583-442e-b5db-00f8ea829baf": {
+            "id": "640c078b-c583-442e-b5db-00f8ea829baf",
+            "interfaceDefinitionId": "led1_drive",
+            "protoPartId": "1AGk7mINFuKOXGWMz54X8",
+            "name": "LED 1 Drive",
+            "displayName": "LED 1 Drive",
+            "implementedRole": "output"
+          },
+          "35aa4ac3-9736-4292-a8b5-041cf325b62d": {
+            "id": "35aa4ac3-9736-4292-a8b5-041cf325b62d",
+            "interfaceDefinitionId": "led2_drive",
+            "protoPartId": "1AGk7mINFuKOXGWMz54X8",
+            "name": "LED 2 Drive",
+            "displayName": "LED 2 Drive",
+            "implementedRole": "output"
+          },
+          "cc96279b-dc05-4452-a631-7388ed68f7e4": {
+            "id": "cc96279b-dc05-4452-a631-7388ed68f7e4",
+            "interfaceDefinitionId": "led3_drive",
+            "protoPartId": "1AGk7mINFuKOXGWMz54X8",
+            "name": "LED 3 Drive",
+            "displayName": "LED 3 Drive",
+            "implementedRole": "output"
+          },
+          "55110219-4a1d-456d-ac5a-bd1b2b4eb26b": {
+            "id": "55110219-4a1d-456d-ac5a-bd1b2b4eb26b",
+            "interfaceDefinitionId": "led4_drive",
+            "protoPartId": "1AGk7mINFuKOXGWMz54X8",
+            "name": "LED 4 Drive",
+            "displayName": "LED 4 Drive",
+            "implementedRole": "output"
+          }
+        },
+        "allocationsById": {
+          "4aede846-7f77-4a6c-9c18-66b655fbd7cd": {
+            "id": "4aede846-7f77-4a6c-9c18-66b655fbd7cd",
+            "resourceFunctionId": "pin5_pb0.DATA",
+            "interfaceFunctionId": "d22bb8bc-c713-4673-9ff3-5fc6621c0321.DATA"
+          },
+          "aef84fe3-7e31-435b-a4c4-1028c7484604": {
+            "id": "aef84fe3-7e31-435b-a4c4-1028c7484604",
+            "resourceFunctionId": "pin7_pb2.CLK",
+            "interfaceFunctionId": "a49de533-03b7-46da-b079-f2a2b2307ba7.CLK"
+          },
+          "3a4cfde0-2490-42d3-b42a-8c907c788e61": {
+            "id": "3a4cfde0-2490-42d3-b42a-8c907c788e61",
+            "resourceFunctionId": "pin1_reset.RESET",
+            "interfaceFunctionId": "5564fd8d-8281-4161-9acf-3484fbc18241.RESET"
+          },
+          "56e1e8c5-563d-462c-ab25-edb3d6367a8d": {
+            "id": "56e1e8c5-563d-462c-ab25-edb3d6367a8d",
+            "resourceFunctionId": "pin6_pb1.MISO",
+            "interfaceFunctionId": "cf264a68-c86d-4b1b-8188-3f85547d9f2a.MISO"
+          },
+          "5246758c-49d0-4aac-b6c2-d382f5d571ef": {
+            "id": "5246758c-49d0-4aac-b6c2-d382f5d571ef",
+            "resourceFunctionId": "pin3_pb4.GPIO_PWM",
+            "interfaceFunctionId": "7a858347-5773-48c0-baf8-86bd31f49802.GPIO_PWM"
+          },
+          "437b1055-07ee-4612-822d-12eab0491bea": {
+            "id": "437b1055-07ee-4612-822d-12eab0491bea",
+            "resourceFunctionId": "pin2_pb3.ANALOG",
+            "interfaceFunctionId": "9d4ffa7d-acbd-4231-ad83-a9d1e2e186d1.ANALOG"
+          },
+          "331f26b7-6205-499c-8303-e5c15e00d8df": {
+            "id": "331f26b7-6205-499c-8303-e5c15e00d8df",
+            "resourceFunctionId": "pin8_vcc.VCC_5V",
+            "interfaceFunctionId": "fa549c87-2301-4695-8b1b-7476a8bde808.VCC_5V"
+          },
+          "eaae6177-d894-4ec9-8cfc-f0b40af2dd30": {
+            "id": "eaae6177-d894-4ec9-8cfc-f0b40af2dd30",
+            "resourceFunctionId": "pin4_gnd.GND",
+            "interfaceFunctionId": "fa549c87-2301-4695-8b1b-7476a8bde808.GND"
+          },
+          "35538f0c-30ce-4ee8-8879-dcdbe602203a": {
+            "id": "35538f0c-30ce-4ee8-8879-dcdbe602203a",
+            "resourceFunctionId": "pin5_pb0.LED1_VCC",
+            "interfaceFunctionId": "640c078b-c583-442e-b5db-00f8ea829baf.LED1_VCC"
+          },
+          "c66ad1f6-179f-45cb-95da-ecdb02a55c64": {
+            "id": "c66ad1f6-179f-45cb-95da-ecdb02a55c64",
+            "resourceFunctionId": "pin6_pb1.LED2_VCC",
+            "interfaceFunctionId": "35aa4ac3-9736-4292-a8b5-041cf325b62d.LED2_VCC"
+          },
+          "5955d558-9b0b-4b36-879b-b3ef0b2dfd86": {
+            "id": "5955d558-9b0b-4b36-879b-b3ef0b2dfd86",
+            "resourceFunctionId": "pin2_pb3.LED3_VCC",
+            "interfaceFunctionId": "cc96279b-dc05-4452-a631-7388ed68f7e4.LED3_VCC"
+          },
+          "88f23b24-05cf-4941-8700-498010a3f5a2": {
+            "id": "88f23b24-05cf-4941-8700-498010a3f5a2",
+            "resourceFunctionId": "pin3_pb4.LED4_VCC",
+            "interfaceFunctionId": "55110219-4a1d-456d-ac5a-bd1b2b4eb26b.LED4_VCC"
+          }
+        },
+        "lastModified": 1776748989374,
+        "stateVersion": 62,
+        "custom": {
+          "fields": {}
+        }
+      },
+      "bNdPFE75fJqbc11ZdhxV5": {
+        "id": "bNdPFE75fJqbc11ZdhxV5",
+        "templateId": "basic-bNdPFE75fJqbc11ZdhxV5",
+        "nickname": "Pad 8 - ANALOG",
+        "position": {
+          "x": 820,
+          "y": 380
+        },
+        "interfacesById": {
+          "c813e73a-2909-423b-95dd-e73cd62e84fb": {
+            "id": "c813e73a-2909-423b-95dd-e73cd62e84fb",
+            "interfaceDefinitionId": "analog_signal",
+            "protoPartId": "bNdPFE75fJqbc11ZdhxV5",
+            "name": "ANALOG Signal",
+            "displayName": "ANALOG Signal"
+          }
+        },
+        "allocationsById": {
+          "def31843-809b-4829-805c-c4de35f0586c": {
+            "id": "def31843-809b-4829-805c-c4de35f0586c",
+            "resourceFunctionId": "analog_pad.ANALOG",
+            "interfaceFunctionId": "c813e73a-2909-423b-95dd-e73cd62e84fb.ANALOG"
+          }
+        },
+        "lastModified": 1776749015570,
+        "stateVersion": 27,
+        "custom": {
+          "fields": {}
+        }
+      },
+      "uaMJdW7PbbgWcAmpVx_dB": {
+        "id": "uaMJdW7PbbgWcAmpVx_dB",
+        "templateId": "basic-uaMJdW7PbbgWcAmpVx_dB",
+        "nickname": "Pad 7 - GPIO/PWM",
+        "position": {
+          "x": 820,
+          "y": 220
+        },
+        "interfacesById": {
+          "01133848-9fb6-4f46-b4ac-eaf80c663bb4": {
+            "id": "01133848-9fb6-4f46-b4ac-eaf80c663bb4",
+            "interfaceDefinitionId": "pwm_signal",
+            "protoPartId": "uaMJdW7PbbgWcAmpVx_dB",
+            "name": "GPIO/PWM Signal",
+            "displayName": "GPIO/PWM Signal"
+          }
+        },
+        "allocationsById": {
+          "339eaf99-6e1f-4029-97be-e1d4a6f74a51": {
+            "id": "339eaf99-6e1f-4029-97be-e1d4a6f74a51",
+            "resourceFunctionId": "pwm_pad.GPIO_PWM",
+            "interfaceFunctionId": "01133848-9fb6-4f46-b4ac-eaf80c663bb4.GPIO_PWM"
+          }
+        },
+        "lastModified": 1776749015574,
+        "stateVersion": 26,
+        "custom": {
+          "fields": {}
+        }
+      },
+      "_xR1FA-npyLAzmcU1FuL4": {
+        "id": "_xR1FA-npyLAzmcU1FuL4",
+        "templateId": "basic-_xR1FA-npyLAzmcU1FuL4",
+        "nickname": "Pad 6 - MISO/GPIO",
+        "position": {
+          "x": 820,
+          "y": 60
+        },
+        "interfacesById": {
+          "379d1ac5-40b3-49cb-b4c2-86dcce8c85c2": {
+            "id": "379d1ac5-40b3-49cb-b4c2-86dcce8c85c2",
+            "interfaceDefinitionId": "miso_signal",
+            "protoPartId": "_xR1FA-npyLAzmcU1FuL4",
+            "name": "MISO Signal",
+            "displayName": "MISO Signal",
+            "implementedRole": "input"
+          }
+        },
+        "allocationsById": {
+          "0c382bd4-54a8-4de6-b679-027c3130edce": {
+            "id": "0c382bd4-54a8-4de6-b679-027c3130edce",
+            "resourceFunctionId": "miso_pad.MISO",
+            "interfaceFunctionId": "379d1ac5-40b3-49cb-b4c2-86dcce8c85c2.MISO"
+          }
+        },
+        "lastModified": 1776749015574,
+        "stateVersion": 26,
+        "custom": {
+          "fields": {}
+        }
+      },
+      "rVRacUFPbQDq3LhNcpwAH": {
+        "id": "rVRacUFPbQDq3LhNcpwAH",
+        "templateId": "basic-rVRacUFPbQDq3LhNcpwAH",
+        "nickname": "Pad 5 - CS/RST",
+        "position": {
+          "x": -40,
+          "y": 360
+        },
+        "interfacesById": {
+          "e84a03f5-87e2-4c39-b278-e3cc2fefab59": {
+            "id": "e84a03f5-87e2-4c39-b278-e3cc2fefab59",
+            "interfaceDefinitionId": "reset_signal",
+            "protoPartId": "rVRacUFPbQDq3LhNcpwAH",
+            "name": "CS/RST Signal",
+            "displayName": "CS/RST Signal"
+          }
+        },
+        "allocationsById": {
+          "71dc2aee-c26d-423f-854d-c359153b69be": {
+            "id": "71dc2aee-c26d-423f-854d-c359153b69be",
+            "resourceFunctionId": "reset_pad.RESET",
+            "interfaceFunctionId": "e84a03f5-87e2-4c39-b278-e3cc2fefab59.RESET"
+          }
+        },
+        "lastModified": 1776749003015,
+        "stateVersion": 26,
+        "custom": {
+          "fields": {}
+        }
+      },
+      "IFiLhx3i8ZHFZPVNEg8n0": {
+        "id": "IFiLhx3i8ZHFZPVNEg8n0",
+        "templateId": "basic-IFiLhx3i8ZHFZPVNEg8n0",
+        "nickname": "Pad 4 - CLK",
+        "position": {
+          "x": -40,
+          "y": 210
+        },
+        "interfacesById": {
+          "3eeef3a2-3245-4242-a982-70ebfc3c5211": {
+            "id": "3eeef3a2-3245-4242-a982-70ebfc3c5211",
+            "interfaceDefinitionId": "clk_signal",
+            "protoPartId": "IFiLhx3i8ZHFZPVNEg8n0",
+            "name": "CLK Signal",
+            "displayName": "CLK Signal"
+          }
+        },
+        "allocationsById": {
+          "edc49fed-fa81-4e3a-a2f5-74028cb18f27": {
+            "id": "edc49fed-fa81-4e3a-a2f5-74028cb18f27",
+            "resourceFunctionId": "clk_pad.CLK",
+            "interfaceFunctionId": "3eeef3a2-3245-4242-a982-70ebfc3c5211.CLK"
+          }
+        },
+        "lastModified": 1776749003021,
+        "stateVersion": 29,
+        "custom": {
+          "fields": {}
+        }
+      },
+      "VYPSKHr3RS2GLnCUEqvgd": {
+        "id": "VYPSKHr3RS2GLnCUEqvgd",
+        "templateId": "basic-VYPSKHr3RS2GLnCUEqvgd",
+        "nickname": "Pad 3 - DATA",
+        "position": {
+          "x": -40,
+          "y": 60
+        },
+        "interfacesById": {
+          "2d16d5c9-4dfa-4da6-91d4-99cae666832d": {
+            "id": "2d16d5c9-4dfa-4da6-91d4-99cae666832d",
+            "interfaceDefinitionId": "data_signal",
+            "protoPartId": "VYPSKHr3RS2GLnCUEqvgd",
+            "name": "DATA Signal",
+            "displayName": "DATA Signal",
+            "implementedRole": "output"
+          }
+        },
+        "allocationsById": {
+          "b5642950-92f2-4669-8fdd-fd9189f6e9e3": {
+            "id": "b5642950-92f2-4669-8fdd-fd9189f6e9e3",
+            "resourceFunctionId": "data_pad.DATA",
+            "interfaceFunctionId": "2d16d5c9-4dfa-4da6-91d4-99cae666832d.DATA"
+          }
+        },
+        "lastModified": 1776749003021,
+        "stateVersion": 27,
+        "custom": {
+          "fields": {}
+        }
+      }
+    },
+    "harnessesById": {
+      "eedee16d-4966-4e08-963b-cb7e1fc7b435": {
+        "id": "eedee16d-4966-4e08-963b-cb7e1fc7b435",
+        "endpoints": {
+          "A": {
+            "label": "A",
+            "partId": "mpjDjlaA2KYMB05qyPX1R"
+          },
+          "B": {
+            "label": "B",
+            "partId": "fFVpV0slY_0ycHSXpgPcp"
+          }
+        },
+        "interfaceLink": {
+          "id": "28902bf7-60ba-4a01-b4f4-e5d32ff4c677",
+          "name": "LED1 to R1",
+          "domain": "electrical",
+          "interfaceA": {
+            "partId": "mpjDjlaA2KYMB05qyPX1R",
+            "interfaceId": "a3412d07-9b1e-4d98-b628-eac3d78b49f0"
+          },
+          "interfaceB": {
+            "partId": "fFVpV0slY_0ycHSXpgPcp",
+            "interfaceId": "1a6ae76e-6480-45be-9bf5-92fca2066c5a"
+          },
+          "functionLinkIds": [
+            "ea9a4461-62a0-4d10-b906-08430882aa38"
+          ]
+        },
+        "functionLinksById": {
+          "ea9a4461-62a0-4d10-b906-08430882aa38": {
+            "id": "ea9a4461-62a0-4d10-b906-08430882aa38",
+            "interfaceLinkId": "28902bf7-60ba-4a01-b4f4-e5d32ff4c677",
+            "aFunctionId": "a3412d07-9b1e-4d98-b628-eac3d78b49f0.GND",
+            "bFunctionId": "1a6ae76e-6480-45be-9bf5-92fca2066c5a.RESISTOR_IN",
+            "label": "Current"
+          }
+        },
+        "lastModified": 1773845578530,
+        "stateVersion": 4
+      },
+      "89af542e-2612-43a1-9f3e-aededfcf6f41": {
+        "id": "89af542e-2612-43a1-9f3e-aededfcf6f41",
+        "endpoints": {
+          "A": {
+            "label": "A",
+            "partId": "842a48f5-d382-4bf9-9696-8d534720b51a"
+          },
+          "B": {
+            "label": "B",
+            "partId": "918fee80-83ac-4a44-922d-a1fe565b6da0"
+          }
+        },
+        "interfaceLink": {
+          "id": "50814dc0-cafd-42ea-acc9-c945d01df544",
+          "name": "LED2 to R2",
+          "domain": "electrical",
+          "interfaceA": {
+            "partId": "842a48f5-d382-4bf9-9696-8d534720b51a",
+            "interfaceId": "558d9218-7289-4ef0-ab45-c6b4034866fc"
+          },
+          "interfaceB": {
+            "partId": "918fee80-83ac-4a44-922d-a1fe565b6da0",
+            "interfaceId": "6a939c34-a6dc-4851-ab67-9c0a5b8ceb7e"
+          },
+          "functionLinkIds": [
+            "fcb2ae46-f891-4be4-a7ec-72e76b679380"
+          ]
+        },
+        "functionLinksById": {
+          "fcb2ae46-f891-4be4-a7ec-72e76b679380": {
+            "id": "fcb2ae46-f891-4be4-a7ec-72e76b679380",
+            "interfaceLinkId": "50814dc0-cafd-42ea-acc9-c945d01df544",
+            "aFunctionId": "558d9218-7289-4ef0-ab45-c6b4034866fc.GND",
+            "bFunctionId": "6a939c34-a6dc-4851-ab67-9c0a5b8ceb7e.RESISTOR_IN",
+            "label": "Current"
+          }
+        },
+        "lastModified": 1773845578842,
+        "stateVersion": 4
+      },
+      "0b9520db-7507-4085-8447-4e58ec21ba3f": {
+        "id": "0b9520db-7507-4085-8447-4e58ec21ba3f",
+        "endpoints": {
+          "A": {
+            "label": "A",
+            "partId": "21079c84-8285-46f9-b35b-f2867e11d58a"
+          },
+          "B": {
+            "label": "B",
+            "partId": "08c5ed05-4ea4-46e9-a1fe-907d5e305e15"
+          }
+        },
+        "interfaceLink": {
+          "id": "984ee04d-db7f-4ca7-b510-9b7c8e93accf",
+          "name": "LED3 to R3",
+          "domain": "electrical",
+          "interfaceA": {
+            "partId": "21079c84-8285-46f9-b35b-f2867e11d58a",
+            "interfaceId": "ceee3ddd-f3ca-404e-9fdf-576b0744fee3"
+          },
+          "interfaceB": {
+            "partId": "08c5ed05-4ea4-46e9-a1fe-907d5e305e15",
+            "interfaceId": "3d82f729-77fd-47cf-a333-7070c6e4c354"
+          },
+          "functionLinkIds": [
+            "c82647c6-70b2-42d7-8eeb-1eaeec2f6c34"
+          ]
+        },
+        "functionLinksById": {
+          "c82647c6-70b2-42d7-8eeb-1eaeec2f6c34": {
+            "id": "c82647c6-70b2-42d7-8eeb-1eaeec2f6c34",
+            "interfaceLinkId": "984ee04d-db7f-4ca7-b510-9b7c8e93accf",
+            "aFunctionId": "ceee3ddd-f3ca-404e-9fdf-576b0744fee3.GND",
+            "bFunctionId": "3d82f729-77fd-47cf-a333-7070c6e4c354.RESISTOR_IN",
+            "label": "Current"
+          }
+        },
+        "lastModified": 1773845579363,
+        "stateVersion": 4
+      },
+      "244906b8-991b-475a-a122-756542e55971": {
+        "id": "244906b8-991b-475a-a122-756542e55971",
+        "endpoints": {
+          "A": {
+            "label": "A",
+            "partId": "34f6db9f-f7ce-4249-b378-d6217756dcc3"
+          },
+          "B": {
+            "label": "B",
+            "partId": "30363942-21cd-47d1-9c1f-62e6f7072dd6"
+          }
+        },
+        "interfaceLink": {
+          "id": "1bc83e48-0e15-4c17-98fc-94269021cd55",
+          "name": "LED4 to R4",
+          "domain": "electrical",
+          "interfaceA": {
+            "partId": "34f6db9f-f7ce-4249-b378-d6217756dcc3",
+            "interfaceId": "044b49ed-d123-4067-97ba-0b17fb741473"
+          },
+          "interfaceB": {
+            "partId": "30363942-21cd-47d1-9c1f-62e6f7072dd6",
+            "interfaceId": "a4278114-ab3e-4695-8aad-90094deafa6e"
+          },
+          "functionLinkIds": [
+            "4cbcec87-0bd6-48e1-8737-c78d56d43f8b"
+          ]
+        },
+        "functionLinksById": {
+          "4cbcec87-0bd6-48e1-8737-c78d56d43f8b": {
+            "id": "4cbcec87-0bd6-48e1-8737-c78d56d43f8b",
+            "interfaceLinkId": "1bc83e48-0e15-4c17-98fc-94269021cd55",
+            "aFunctionId": "044b49ed-d123-4067-97ba-0b17fb741473.GND",
+            "bFunctionId": "a4278114-ab3e-4695-8aad-90094deafa6e.RESISTOR_IN",
+            "label": "Current"
+          }
+        },
+        "lastModified": 1773845580054,
+        "stateVersion": 4
+      },
+      "714643f4-892b-4fd5-b184-d5efd94629c4": {
+        "id": "714643f4-892b-4fd5-b184-d5efd94629c4",
+        "endpoints": {
+          "A": {
+            "label": "A",
+            "partId": "fFVpV0slY_0ycHSXpgPcp"
+          },
+          "B": {
+            "label": "B",
+            "partId": "848t6FXjZg-gFcYJHxtV4"
+          }
+        },
+        "interfaceLink": {
+          "id": "07c41fac-56ce-4c9c-89ae-7889f9d2b6d6",
+          "name": "R1 to GND",
+          "domain": "electrical",
+          "interfaceA": {
+            "partId": "fFVpV0slY_0ycHSXpgPcp",
+            "interfaceId": "1a6ae76e-6480-45be-9bf5-92fca2066c5a"
+          },
+          "interfaceB": {
+            "partId": "848t6FXjZg-gFcYJHxtV4",
+            "interfaceId": "b51fb6e4-f38e-43e2-ac19-68159be271a2"
+          },
+          "functionLinkIds": [
+            "440a74f4-d0fa-4acd-bae1-c180995042ff"
+          ]
+        },
+        "functionLinksById": {
+          "440a74f4-d0fa-4acd-bae1-c180995042ff": {
+            "id": "440a74f4-d0fa-4acd-bae1-c180995042ff",
+            "interfaceLinkId": "07c41fac-56ce-4c9c-89ae-7889f9d2b6d6",
+            "aFunctionId": "1a6ae76e-6480-45be-9bf5-92fca2066c5a.RESISTOR_OUT",
+            "bFunctionId": "b51fb6e4-f38e-43e2-ac19-68159be271a2.GND",
+            "label": "GND"
+          }
+        },
+        "lastModified": 1773851279231,
+        "stateVersion": 6
+      },
+      "77bf632e-ef25-4295-9fc2-f2c6fdedad05": {
+        "id": "77bf632e-ef25-4295-9fc2-f2c6fdedad05",
+        "endpoints": {
+          "A": {
+            "label": "A",
+            "partId": "918fee80-83ac-4a44-922d-a1fe565b6da0"
+          },
+          "B": {
+            "label": "B",
+            "partId": "848t6FXjZg-gFcYJHxtV4"
+          }
+        },
+        "interfaceLink": {
+          "id": "4447903e-7aa7-41e1-944c-1d5595379132",
+          "name": "R2 to GND",
+          "domain": "electrical",
+          "interfaceA": {
+            "partId": "918fee80-83ac-4a44-922d-a1fe565b6da0",
+            "interfaceId": "6a939c34-a6dc-4851-ab67-9c0a5b8ceb7e"
+          },
+          "interfaceB": {
+            "partId": "848t6FXjZg-gFcYJHxtV4",
+            "interfaceId": "b51fb6e4-f38e-43e2-ac19-68159be271a2"
+          },
+          "functionLinkIds": [
+            "3e38ef9b-a202-441f-b6f3-9bdcdedf23ca"
+          ]
+        },
+        "functionLinksById": {
+          "3e38ef9b-a202-441f-b6f3-9bdcdedf23ca": {
+            "id": "3e38ef9b-a202-441f-b6f3-9bdcdedf23ca",
+            "interfaceLinkId": "4447903e-7aa7-41e1-944c-1d5595379132",
+            "aFunctionId": "6a939c34-a6dc-4851-ab67-9c0a5b8ceb7e.RESISTOR_OUT",
+            "bFunctionId": "b51fb6e4-f38e-43e2-ac19-68159be271a2.GND",
+            "label": "GND"
+          }
+        },
+        "lastModified": 1773851279539,
+        "stateVersion": 6
+      },
+      "4c6b85c9-0ae0-4cfa-a5f0-2c38a07a396f": {
+        "id": "4c6b85c9-0ae0-4cfa-a5f0-2c38a07a396f",
+        "endpoints": {
+          "A": {
+            "label": "A",
+            "partId": "08c5ed05-4ea4-46e9-a1fe-907d5e305e15"
+          },
+          "B": {
+            "label": "B",
+            "partId": "848t6FXjZg-gFcYJHxtV4"
+          }
+        },
+        "interfaceLink": {
+          "id": "9515aec2-aafd-4969-b638-841ef6349ed7",
+          "name": "R3 to GND",
+          "domain": "electrical",
+          "interfaceA": {
+            "partId": "08c5ed05-4ea4-46e9-a1fe-907d5e305e15",
+            "interfaceId": "3d82f729-77fd-47cf-a333-7070c6e4c354"
+          },
+          "interfaceB": {
+            "partId": "848t6FXjZg-gFcYJHxtV4",
+            "interfaceId": "b51fb6e4-f38e-43e2-ac19-68159be271a2"
+          },
+          "functionLinkIds": [
+            "a4ec4bb1-d2c8-428c-aeb1-eaacab1c6ec8"
+          ]
+        },
+        "functionLinksById": {
+          "a4ec4bb1-d2c8-428c-aeb1-eaacab1c6ec8": {
+            "id": "a4ec4bb1-d2c8-428c-aeb1-eaacab1c6ec8",
+            "interfaceLinkId": "9515aec2-aafd-4969-b638-841ef6349ed7",
+            "aFunctionId": "3d82f729-77fd-47cf-a333-7070c6e4c354.RESISTOR_OUT",
+            "bFunctionId": "b51fb6e4-f38e-43e2-ac19-68159be271a2.GND",
+            "label": "GND"
+          }
+        },
+        "lastModified": 1773851279785,
+        "stateVersion": 6
+      },
+      "dcc634c5-5e1e-4513-a4d5-b6adb4056062": {
+        "id": "dcc634c5-5e1e-4513-a4d5-b6adb4056062",
+        "endpoints": {
+          "A": {
+            "label": "A",
+            "partId": "30363942-21cd-47d1-9c1f-62e6f7072dd6"
+          },
+          "B": {
+            "label": "B",
+            "partId": "848t6FXjZg-gFcYJHxtV4"
+          }
+        },
+        "interfaceLink": {
+          "id": "6390ee6b-7a5d-41fb-9141-432f004619a4",
+          "name": "R4 to GND",
+          "domain": "electrical",
+          "interfaceA": {
+            "partId": "30363942-21cd-47d1-9c1f-62e6f7072dd6",
+            "interfaceId": "a4278114-ab3e-4695-8aad-90094deafa6e"
+          },
+          "interfaceB": {
+            "partId": "848t6FXjZg-gFcYJHxtV4",
+            "interfaceId": "b51fb6e4-f38e-43e2-ac19-68159be271a2"
+          },
+          "functionLinkIds": [
+            "468f27a0-fa5f-47b9-b376-444cc08ee9f1"
+          ]
+        },
+        "functionLinksById": {
+          "468f27a0-fa5f-47b9-b376-444cc08ee9f1": {
+            "id": "468f27a0-fa5f-47b9-b376-444cc08ee9f1",
+            "interfaceLinkId": "6390ee6b-7a5d-41fb-9141-432f004619a4",
+            "aFunctionId": "a4278114-ab3e-4695-8aad-90094deafa6e.RESISTOR_OUT",
+            "bFunctionId": "b51fb6e4-f38e-43e2-ac19-68159be271a2.GND",
+            "label": "GND"
+          }
+        },
+        "lastModified": 1773851280184,
+        "stateVersion": 6
+      },
+      "3a7fa3fa-f663-4604-a083-c2141e55bb21": {
+        "id": "3a7fa3fa-f663-4604-a083-c2141e55bb21",
+        "endpoints": {
+          "A": {
+            "label": "A",
+            "partId": "bNdPFE75fJqbc11ZdhxV5"
+          },
+          "B": {
+            "label": "B",
+            "partId": "1AGk7mINFuKOXGWMz54X8"
+          }
+        },
+        "interfaceLink": {
+          "id": "897c054a-a21a-455c-8088-36616c80253e",
+          "name": "ANALOG",
+          "domain": "electrical",
+          "interfaceA": {
+            "partId": "bNdPFE75fJqbc11ZdhxV5",
+            "interfaceId": "c813e73a-2909-423b-95dd-e73cd62e84fb"
+          },
+          "interfaceB": {
+            "partId": "1AGk7mINFuKOXGWMz54X8",
+            "interfaceId": "9d4ffa7d-acbd-4231-ad83-a9d1e2e186d1"
+          },
+          "functionLinkIds": [
+            "60381503-0846-4aac-a60a-29c766bc3fce"
+          ]
+        },
+        "functionLinksById": {
+          "60381503-0846-4aac-a60a-29c766bc3fce": {
+            "id": "60381503-0846-4aac-a60a-29c766bc3fce",
+            "interfaceLinkId": "897c054a-a21a-455c-8088-36616c80253e",
+            "aFunctionId": "c813e73a-2909-423b-95dd-e73cd62e84fb.ANALOG",
+            "bFunctionId": "9d4ffa7d-acbd-4231-ad83-a9d1e2e186d1.ANALOG",
+            "label": "ANALOG"
+          }
+        },
+        "lastModified": 1775253354483,
+        "stateVersion": 7
+      },
+      "b46c09de-8389-4b1b-83c2-a22bf679b120": {
+        "id": "b46c09de-8389-4b1b-83c2-a22bf679b120",
+        "endpoints": {
+          "A": {
+            "label": "A",
+            "partId": "uaMJdW7PbbgWcAmpVx_dB"
+          },
+          "B": {
+            "label": "B",
+            "partId": "1AGk7mINFuKOXGWMz54X8"
+          }
+        },
+        "interfaceLink": {
+          "id": "9ce8c3a9-163a-44b0-a204-d03a587a0fec",
+          "name": "GPIO/PWM",
+          "domain": "electrical",
+          "interfaceA": {
+            "partId": "uaMJdW7PbbgWcAmpVx_dB",
+            "interfaceId": "01133848-9fb6-4f46-b4ac-eaf80c663bb4"
+          },
+          "interfaceB": {
+            "partId": "1AGk7mINFuKOXGWMz54X8",
+            "interfaceId": "7a858347-5773-48c0-baf8-86bd31f49802"
+          },
+          "functionLinkIds": [
+            "97697928-000f-4a6e-b4fb-85cf59191494"
+          ]
+        },
+        "functionLinksById": {
+          "97697928-000f-4a6e-b4fb-85cf59191494": {
+            "id": "97697928-000f-4a6e-b4fb-85cf59191494",
+            "interfaceLinkId": "9ce8c3a9-163a-44b0-a204-d03a587a0fec",
+            "aFunctionId": "01133848-9fb6-4f46-b4ac-eaf80c663bb4.GPIO_PWM",
+            "bFunctionId": "7a858347-5773-48c0-baf8-86bd31f49802.GPIO_PWM",
+            "label": "GPIO_PWM"
+          }
+        },
+        "lastModified": 1775253353514,
+        "stateVersion": 7
+      },
+      "0f8a177e-72e9-4887-b60c-d1102d79f991": {
+        "id": "0f8a177e-72e9-4887-b60c-d1102d79f991",
+        "endpoints": {
+          "A": {
+            "label": "A",
+            "partId": "_xR1FA-npyLAzmcU1FuL4"
+          },
+          "B": {
+            "label": "B",
+            "partId": "1AGk7mINFuKOXGWMz54X8"
+          }
+        },
+        "interfaceLink": {
+          "id": "09a52041-8565-48f2-bc3b-5ea14957ca58",
+          "name": "gpio",
+          "domain": "electrical",
+          "interfaceA": {
+            "partId": "_xR1FA-npyLAzmcU1FuL4",
+            "interfaceId": "379d1ac5-40b3-49cb-b4c2-86dcce8c85c2"
+          },
+          "interfaceB": {
+            "partId": "1AGk7mINFuKOXGWMz54X8",
+            "interfaceId": "cf264a68-c86d-4b1b-8188-3f85547d9f2a"
+          },
+          "functionLinkIds": [
+            "c21e37a9-bb31-4c31-b30b-864fe4396f74"
+          ]
+        },
+        "functionLinksById": {
+          "c21e37a9-bb31-4c31-b30b-864fe4396f74": {
+            "id": "c21e37a9-bb31-4c31-b30b-864fe4396f74",
+            "interfaceLinkId": "09a52041-8565-48f2-bc3b-5ea14957ca58",
+            "aFunctionId": "379d1ac5-40b3-49cb-b4c2-86dcce8c85c2.MISO",
+            "bFunctionId": "cf264a68-c86d-4b1b-8188-3f85547d9f2a.MISO",
+            "label": "MISO"
+          }
+        },
+        "lastModified": 1775253352366,
+        "stateVersion": 5
+      },
+      "747c5935-19fa-4bbf-b3b9-b8dc460f0a0d": {
+        "id": "747c5935-19fa-4bbf-b3b9-b8dc460f0a0d",
+        "endpoints": {
+          "A": {
+            "label": "A",
+            "partId": "rVRacUFPbQDq3LhNcpwAH"
+          },
+          "B": {
+            "label": "B",
+            "partId": "1AGk7mINFuKOXGWMz54X8"
+          }
+        },
+        "interfaceLink": {
+          "id": "39768f50-6c4e-4d4b-a556-a23b6c3be4e2",
+          "name": "RESET",
+          "domain": "electrical",
+          "interfaceA": {
+            "partId": "rVRacUFPbQDq3LhNcpwAH",
+            "interfaceId": "e84a03f5-87e2-4c39-b278-e3cc2fefab59"
+          },
+          "interfaceB": {
+            "partId": "1AGk7mINFuKOXGWMz54X8",
+            "interfaceId": "5564fd8d-8281-4161-9acf-3484fbc18241"
+          },
+          "functionLinkIds": [
+            "0f42cf55-3c7a-4256-b7f9-41d02c8150a2"
+          ]
+        },
+        "functionLinksById": {
+          "0f42cf55-3c7a-4256-b7f9-41d02c8150a2": {
+            "id": "0f42cf55-3c7a-4256-b7f9-41d02c8150a2",
+            "interfaceLinkId": "39768f50-6c4e-4d4b-a556-a23b6c3be4e2",
+            "aFunctionId": "e84a03f5-87e2-4c39-b278-e3cc2fefab59.RESET",
+            "bFunctionId": "5564fd8d-8281-4161-9acf-3484fbc18241.RESET",
+            "label": "RESET"
+          }
+        },
+        "lastModified": 1775253351249,
+        "stateVersion": 7
+      },
+      "pw1jhKXXGf9AhE9s8uCwH": {
+        "id": "pw1jhKXXGf9AhE9s8uCwH",
+        "endpoints": {
+          "A": {
+            "label": "A",
+            "partId": "1AGk7mINFuKOXGWMz54X8"
+          },
+          "B": {
+            "label": "B",
+            "partId": "IFiLhx3i8ZHFZPVNEg8n0"
+          }
+        },
+        "interfaceLink": {
+          "id": "d71ae256-4b8e-45d1-bfb7-9b58a62bae9b",
+          "name": "CLK",
+          "domain": "electrical",
+          "interfaceA": {
+            "partId": "1AGk7mINFuKOXGWMz54X8",
+            "interfaceId": "a49de533-03b7-46da-b079-f2a2b2307ba7"
+          },
+          "interfaceB": {
+            "partId": "IFiLhx3i8ZHFZPVNEg8n0",
+            "interfaceId": "3eeef3a2-3245-4242-a982-70ebfc3c5211"
+          },
+          "functionLinkIds": [
+            "a9c0ebba-5ad2-4f7c-b8a7-99c38952e219"
+          ]
+        },
+        "functionLinksById": {
+          "a9c0ebba-5ad2-4f7c-b8a7-99c38952e219": {
+            "id": "a9c0ebba-5ad2-4f7c-b8a7-99c38952e219",
+            "interfaceLinkId": "d71ae256-4b8e-45d1-bfb7-9b58a62bae9b",
+            "aFunctionId": "a49de533-03b7-46da-b079-f2a2b2307ba7.CLK",
+            "bFunctionId": "3eeef3a2-3245-4242-a982-70ebfc3c5211.CLK",
+            "label": "CLK"
+          }
+        },
+        "lastModified": 1775253350260,
+        "stateVersion": 8
+      },
+      "vI6VAiumV4hg3G8Oxrgtn": {
+        "id": "vI6VAiumV4hg3G8Oxrgtn",
+        "endpoints": {
+          "A": {
+            "label": "A",
+            "partId": "1AGk7mINFuKOXGWMz54X8"
+          },
+          "B": {
+            "label": "B",
+            "partId": "VYPSKHr3RS2GLnCUEqvgd"
+          }
+        },
+        "interfaceLink": {
+          "id": "9b8325a9-578e-4ec2-9741-859f263ccd1f",
+          "name": "gpio",
+          "domain": "electrical",
+          "interfaceA": {
+            "partId": "1AGk7mINFuKOXGWMz54X8",
+            "interfaceId": "d22bb8bc-c713-4673-9ff3-5fc6621c0321"
+          },
+          "interfaceB": {
+            "partId": "VYPSKHr3RS2GLnCUEqvgd",
+            "interfaceId": "2d16d5c9-4dfa-4da6-91d4-99cae666832d"
+          },
+          "functionLinkIds": [
+            "1754268a-f986-4c94-a046-fa808d3839a7"
+          ]
+        },
+        "functionLinksById": {
+          "1754268a-f986-4c94-a046-fa808d3839a7": {
+            "id": "1754268a-f986-4c94-a046-fa808d3839a7",
+            "interfaceLinkId": "9b8325a9-578e-4ec2-9741-859f263ccd1f",
+            "aFunctionId": "d22bb8bc-c713-4673-9ff3-5fc6621c0321.DATA",
+            "bFunctionId": "2d16d5c9-4dfa-4da6-91d4-99cae666832d.DATA",
+            "label": "DATA"
+          }
+        },
+        "lastModified": 1775253349216,
+        "stateVersion": 6
+      },
+      "0500913a-a5df-4608-91e3-5b63a18f6565": {
+        "id": "0500913a-a5df-4608-91e3-5b63a18f6565",
+        "endpoints": {
+          "A": {
+            "label": "A",
+            "partId": "NLkZFikHo6YDudwjzZbog"
+          },
+          "B": {
+            "label": "B",
+            "partId": "1AGk7mINFuKOXGWMz54X8"
+          }
+        },
+        "interfaceLink": {
+          "id": "d8d7f3b5-c62d-4fa0-ac56-349bdb1d55b6",
+          "name": "VCC Power",
+          "domain": "electrical",
+          "interfaceA": {
+            "partId": "NLkZFikHo6YDudwjzZbog",
+            "interfaceId": "ccd5005d-bbc0-42d0-9a68-403aa063a18c"
+          },
+          "interfaceB": {
+            "partId": "1AGk7mINFuKOXGWMz54X8",
+            "interfaceId": "fa549c87-2301-4695-8b1b-7476a8bde808"
+          },
+          "functionLinkIds": [
+            "defd19eb-fae0-4b32-9de7-ca013e2ee290"
+          ]
+        },
+        "functionLinksById": {
+          "defd19eb-fae0-4b32-9de7-ca013e2ee290": {
+            "id": "defd19eb-fae0-4b32-9de7-ca013e2ee290",
+            "interfaceLinkId": "d8d7f3b5-c62d-4fa0-ac56-349bdb1d55b6",
+            "aFunctionId": "ccd5005d-bbc0-42d0-9a68-403aa063a18c.VCC_5V",
+            "bFunctionId": "fa549c87-2301-4695-8b1b-7476a8bde808.VCC_5V",
+            "label": "VCC_5V"
+          }
+        },
+        "lastModified": 1775253949286,
+        "stateVersion": 4
+      },
+      "1d1a2b8a-8b25-4fc9-907d-b3ab9504169f": {
+        "id": "1d1a2b8a-8b25-4fc9-907d-b3ab9504169f",
+        "endpoints": {
+          "A": {
+            "label": "A",
+            "partId": "848t6FXjZg-gFcYJHxtV4"
+          },
+          "B": {
+            "label": "B",
+            "partId": "1AGk7mINFuKOXGWMz54X8"
+          }
+        },
+        "interfaceLink": {
+          "id": "c668fc68-c5b9-4e86-8d72-c1e8ce6ef137",
+          "name": "GND",
+          "domain": "electrical",
+          "interfaceA": {
+            "partId": "848t6FXjZg-gFcYJHxtV4",
+            "interfaceId": "b51fb6e4-f38e-43e2-ac19-68159be271a2"
+          },
+          "interfaceB": {
+            "partId": "1AGk7mINFuKOXGWMz54X8",
+            "interfaceId": "fa549c87-2301-4695-8b1b-7476a8bde808"
+          },
+          "functionLinkIds": [
+            "6e1f17ec-ba9b-4eb5-b8cf-8aa1b720ae9a"
+          ]
+        },
+        "functionLinksById": {
+          "6e1f17ec-ba9b-4eb5-b8cf-8aa1b720ae9a": {
+            "id": "6e1f17ec-ba9b-4eb5-b8cf-8aa1b720ae9a",
+            "interfaceLinkId": "c668fc68-c5b9-4e86-8d72-c1e8ce6ef137",
+            "aFunctionId": "b51fb6e4-f38e-43e2-ac19-68159be271a2.GND",
+            "bFunctionId": "fa549c87-2301-4695-8b1b-7476a8bde808.GND",
+            "label": "GND"
+          }
+        },
+        "lastModified": 1775253950481,
+        "stateVersion": 6
+      },
+      "ccfcf9cc-5535-4c25-8bed-07d0f4419f26": {
+        "id": "ccfcf9cc-5535-4c25-8bed-07d0f4419f26",
+        "endpoints": {
+          "A": {
+            "label": "A",
+            "partId": "1AGk7mINFuKOXGWMz54X8"
+          },
+          "B": {
+            "label": "B",
+            "partId": "mpjDjlaA2KYMB05qyPX1R"
+          }
+        },
+        "interfaceLink": {
+          "id": "eed367ac-f617-4c6b-b7be-2e52f75fc818",
+          "name": "LED 1",
+          "domain": "electrical",
+          "interfaceA": {
+            "partId": "1AGk7mINFuKOXGWMz54X8",
+            "interfaceId": "640c078b-c583-442e-b5db-00f8ea829baf"
+          },
+          "interfaceB": {
+            "partId": "mpjDjlaA2KYMB05qyPX1R",
+            "interfaceId": "a3412d07-9b1e-4d98-b628-eac3d78b49f0"
+          },
+          "functionLinkIds": [
+            "df3c82de-59a6-4cab-a78c-42ccee1be3a8"
+          ]
+        },
+        "functionLinksById": {
+          "df3c82de-59a6-4cab-a78c-42ccee1be3a8": {
+            "id": "df3c82de-59a6-4cab-a78c-42ccee1be3a8",
+            "interfaceLinkId": "eed367ac-f617-4c6b-b7be-2e52f75fc818",
+            "aFunctionId": "640c078b-c583-442e-b5db-00f8ea829baf.LED1_VCC",
+            "bFunctionId": "a3412d07-9b1e-4d98-b628-eac3d78b49f0.VCC",
+            "label": "LED1_VCC"
+          }
+        },
+        "lastModified": 1775253995000,
+        "stateVersion": 4
+      },
+      "05a6e00c-01eb-48da-b727-7ca4e87e7caf": {
+        "id": "05a6e00c-01eb-48da-b727-7ca4e87e7caf",
+        "endpoints": {
+          "A": {
+            "label": "A",
+            "partId": "1AGk7mINFuKOXGWMz54X8"
+          },
+          "B": {
+            "label": "B",
+            "partId": "842a48f5-d382-4bf9-9696-8d534720b51a"
+          }
+        },
+        "interfaceLink": {
+          "id": "8c61cbac-ecee-4ef0-a461-a84e749bee4f",
+          "name": "LED 2",
+          "domain": "electrical",
+          "interfaceA": {
+            "partId": "1AGk7mINFuKOXGWMz54X8",
+            "interfaceId": "35aa4ac3-9736-4292-a8b5-041cf325b62d"
+          },
+          "interfaceB": {
+            "partId": "842a48f5-d382-4bf9-9696-8d534720b51a",
+            "interfaceId": "558d9218-7289-4ef0-ab45-c6b4034866fc"
+          },
+          "functionLinkIds": [
+            "e3658d97-3247-44be-8a78-dd27263114d0"
+          ]
+        },
+        "functionLinksById": {
+          "e3658d97-3247-44be-8a78-dd27263114d0": {
+            "id": "e3658d97-3247-44be-8a78-dd27263114d0",
+            "interfaceLinkId": "8c61cbac-ecee-4ef0-a461-a84e749bee4f",
+            "aFunctionId": "35aa4ac3-9736-4292-a8b5-041cf325b62d.LED2_VCC",
+            "bFunctionId": "558d9218-7289-4ef0-ab45-c6b4034866fc.VCC",
+            "label": "LED2_VCC"
+          }
+        },
+        "lastModified": 1775253998972,
+        "stateVersion": 4
+      },
+      "7753d919-4e3a-4183-8c7d-86cd360bb533": {
+        "id": "7753d919-4e3a-4183-8c7d-86cd360bb533",
+        "endpoints": {
+          "A": {
+            "label": "A",
+            "partId": "1AGk7mINFuKOXGWMz54X8"
+          },
+          "B": {
+            "label": "B",
+            "partId": "21079c84-8285-46f9-b35b-f2867e11d58a"
+          }
+        },
+        "interfaceLink": {
+          "id": "2f2d02f1-9419-4eae-838d-ae6c9c589bae",
+          "name": "LED 3",
+          "domain": "electrical",
+          "interfaceA": {
+            "partId": "1AGk7mINFuKOXGWMz54X8",
+            "interfaceId": "cc96279b-dc05-4452-a631-7388ed68f7e4"
+          },
+          "interfaceB": {
+            "partId": "21079c84-8285-46f9-b35b-f2867e11d58a",
+            "interfaceId": "ceee3ddd-f3ca-404e-9fdf-576b0744fee3"
+          },
+          "functionLinkIds": [
+            "fe2b97a7-1e16-4bb4-9da1-6358d764af6d"
+          ]
+        },
+        "functionLinksById": {
+          "fe2b97a7-1e16-4bb4-9da1-6358d764af6d": {
+            "id": "fe2b97a7-1e16-4bb4-9da1-6358d764af6d",
+            "interfaceLinkId": "2f2d02f1-9419-4eae-838d-ae6c9c589bae",
+            "aFunctionId": "cc96279b-dc05-4452-a631-7388ed68f7e4.LED3_VCC",
+            "bFunctionId": "ceee3ddd-f3ca-404e-9fdf-576b0744fee3.VCC",
+            "label": "LED3_VCC"
+          }
+        },
+        "lastModified": 1775254002971,
+        "stateVersion": 4
+      },
+      "af25a664-8c6b-4a50-9b56-e475064343f5": {
+        "id": "af25a664-8c6b-4a50-9b56-e475064343f5",
+        "endpoints": {
+          "A": {
+            "label": "A",
+            "partId": "1AGk7mINFuKOXGWMz54X8"
+          },
+          "B": {
+            "label": "B",
+            "partId": "34f6db9f-f7ce-4249-b378-d6217756dcc3"
+          }
+        },
+        "interfaceLink": {
+          "id": "ff744977-2c0d-4137-8141-c2174295a45c",
+          "name": "LED 4",
+          "domain": "electrical",
+          "interfaceA": {
+            "partId": "1AGk7mINFuKOXGWMz54X8",
+            "interfaceId": "55110219-4a1d-456d-ac5a-bd1b2b4eb26b"
+          },
+          "interfaceB": {
+            "partId": "34f6db9f-f7ce-4249-b378-d6217756dcc3",
+            "interfaceId": "044b49ed-d123-4067-97ba-0b17fb741473"
+          },
+          "functionLinkIds": [
+            "f38f44bf-18fe-4e7f-8563-3313b3ac3f00"
+          ]
+        },
+        "functionLinksById": {
+          "f38f44bf-18fe-4e7f-8563-3313b3ac3f00": {
+            "id": "f38f44bf-18fe-4e7f-8563-3313b3ac3f00",
+            "interfaceLinkId": "ff744977-2c0d-4137-8141-c2174295a45c",
+            "aFunctionId": "55110219-4a1d-456d-ac5a-bd1b2b4eb26b.LED4_VCC",
+            "bFunctionId": "044b49ed-d123-4067-97ba-0b17fb741473.VCC",
+            "label": "LED4_VCC"
+          }
+        },
+        "lastModified": 1775254006458,
+        "stateVersion": 4
+      }
+    },
+    "annotationsById": {},
+    "noteEdgesById": {},
+    "harnessIdToEdgeId": {
+      "eedee16d-4966-4e08-963b-cb7e1fc7b435": "8ddc6a08-b82a-4431-af76-8a6e5fa0aa56",
+      "89af542e-2612-43a1-9f3e-aededfcf6f41": "976801e5-85d7-4629-b184-adda502eecfe",
+      "0b9520db-7507-4085-8447-4e58ec21ba3f": "76d8ba0f-6cea-4a52-99ad-2108341c2555",
+      "244906b8-991b-475a-a122-756542e55971": "f4abd19d-d47b-4b22-8a4f-0e047a52fc30",
+      "714643f4-892b-4fd5-b184-d5efd94629c4": "d6342336-1647-421b-b794-c708d2fc3487",
+      "77bf632e-ef25-4295-9fc2-f2c6fdedad05": "517f0b6d-98fe-4bff-9247-47f3200a151c",
+      "4c6b85c9-0ae0-4cfa-a5f0-2c38a07a396f": "e31ba677-1241-496d-88ee-f0572650fbaa",
+      "dcc634c5-5e1e-4513-a4d5-b6adb4056062": "b948f70a-56bf-4243-aa66-666eb9f2ed29",
+      "3a7fa3fa-f663-4604-a083-c2141e55bb21": "pad8-mcu",
+      "b46c09de-8389-4b1b-83c2-a22bf679b120": "pad7-mcu",
+      "0f8a177e-72e9-4887-b60c-d1102d79f991": "pad6-mcu",
+      "747c5935-19fa-4bbf-b3b9-b8dc460f0a0d": "pad5-mcu",
+      "pw1jhKXXGf9AhE9s8uCwH": "edge-1773851707286-4mpz9",
+      "vI6VAiumV4hg3G8Oxrgtn": "edge-1773851710113-owfrq",
+      "0500913a-a5df-4608-91e3-5b63a18f6565": "99baf335-9b20-4f97-9e1c-332086bac462",
+      "1d1a2b8a-8b25-4fc9-907d-b3ab9504169f": "b779221d-1d90-4c91-aeb1-c1e179b33b0d",
+      "ccfcf9cc-5535-4c25-8bed-07d0f4419f26": "11f11225-54be-4497-8df6-f8d7246c2fef",
+      "05a6e00c-01eb-48da-b727-7ca4e87e7caf": "2539f87f-3b58-42c9-b46c-3a971253b18f",
+      "7753d919-4e3a-4183-8c7d-86cd360bb533": "7878afdc-7b02-4e3f-a3df-ff5c0fa8695c",
+      "af25a664-8c6b-4a50-9b56-e475064343f5": "4e15561c-fdd3-4b27-99c9-53c8afa9ec5e"
+    },
+    "templateState": {
+      "templatesById": {
+        "basic-mpjDjlaA2KYMB05qyPX1R": {
+          "part": {
+            "compatibility_notes": "Compatible with standard 0603 SMD footprints. Requires reflow soldering or careful hand soldering with temperature-controlled iron.",
+            "description": "0603 SMD White LED indicator with 2.6V-3.6V forward voltage, suitable for PCB indicator and glow applications. Wide viewing angle ideal for internal illumination effects.",
+            "domains": [
+              {
+                "domain": "electrical",
+                "interfaces": [
+                  {
+                    "description": "Power interface for LED. Requires current-limiting resistor in series.",
+                    "id": "led_power",
+                    "name": "LED Power Interface",
+                    "power_delivery": {
+                      "max_current_mA": 25,
+                      "max_voltage_V": 3.6
+                    },
+                    "protocol": {
+                      "role": "input",
+                      "type": "power"
+                    },
+                    "requires": [
+                      {
+                        "count": 1,
+                        "function": "VCC",
+                        "shareable_with": []
+                      },
+                      {
+                        "count": 1,
+                        "function": "GND",
+                        "shareable_with": []
+                      }
+                    ]
+                  }
+                ],
+                "pin_count": 2,
+                "power_consumption_mW": 75,
+                "resources": [
+                  {
+                    "connector_type": "surface_mount",
+                    "functions": [
+                      {
+                        "description": "LED anode - connect to positive supply through resistor",
+                        "direction": "sink",
+                        "name": "VCC",
+                        "signal_class": "power"
+                      }
+                    ],
+                    "id": "anode",
+                    "name": "Anode Pin"
+                  },
+                  {
+                    "connector_type": "surface_mount",
+                    "functions": [
+                      {
+                        "description": "LED cathode - connect to ground",
+                        "direction": "source",
+                        "name": "GND",
+                        "signal_class": "ground"
+                      }
+                    ],
+                    "id": "cathode",
+                    "name": "Cathode Pin"
+                  }
+                ],
+                "supply_voltage_V": [
+                  2.6,
+                  3.6
+                ]
+              },
+              {
+                "dimensions_mm": {
+                  "height": 0.55,
+                  "length": 1.6,
+                  "width": 0.8
+                },
+                "domain": "mechanical",
+                "interfaces": [
+                  {
+                    "id": "mounting",
+                    "name": "PCB Mount",
+                    "protocol": {
+                      "role": "mounting_point",
+                      "type": "surface_mount"
+                    },
+                    "requires": [
+                      {
+                        "count": 1,
+                        "function": "MOUNT"
+                      }
+                    ]
+                  }
+                ],
+                "resources": [
+                  {
+                    "connector_type": "surface_mount",
+                    "functions": [
+                      {
+                        "description": "Surface mount footprint",
+                        "name": "MOUNT"
+                      }
+                    ],
+                    "id": "package",
+                    "name": "0603 Package"
+                  }
+                ],
+                "weight_g": 0.002
+              }
+            ],
+            "manufacturer": "NATIONSTAR",
+            "part_number": "NCD0603W3",
+            "schema_version": "1.1.0",
+            "tags": [
+              "LED",
+              "white",
+              "0603",
+              "SMD",
+              "indicator",
+              "NATIONSTAR"
+            ],
+            "usage_notes": "Always use a current-limiting resistor in series. For 5V supply, use 120Ω resistor for ~15mA current. LED forward voltage varies with color; white LEDs typically 3.0-3.2V.",
+            "warnings": [
+              "Exceeding maximum forward current (25mA) will damage the LED",
+              "Reverse voltage exceeding 5V may cause permanent damage",
+              "Always include current-limiting resistor to prevent burnout"
+            ],
+            "metadata": {
+              "categories": [
+                "optoelectronics",
+                "LED"
+              ],
+              "datasheet_url": "https://datasheet.lcsc.com/lcsc/1806140214_NationStar-Optoelectronics-NCD0603W3_C158100.pdf",
+              "id": "basic-mpjDjlaA2KYMB05qyPX1R",
+              "lcsc_id": "C158100",
+              "name": "NCD0603W3 White LED"
+            },
+            "node_geometry": {
+              "xScale": 1,
+              "yScale": 1,
+              "outline": {
+                "preset": "rounded_rectangle"
+              }
+            }
+          },
+          "templateId": "basic-mpjDjlaA2KYMB05qyPX1R",
+          "origin": "local",
+          "localVersion": 1,
+          "localVersionTimestamp": 1773845917985,
+          "isDirty": false,
+          "lastLoadedAt": 1773845917985
+        },
+        "basic-fFVpV0slY_0ycHSXpgPcp": {
+          "part": {
+            "compatibility_notes": "Compatible with standard 0603 SMD footprints. E24 series standard value.",
+            "description": "0603 SMD thick film resistor, 120Ω resistance, 100mW power rating. Suitable for LED current limiting and general-purpose applications.",
+            "domains": [
+              {
+                "domain": "electrical",
+                "interfaces": [
+                  {
+                    "description": "Bidirectional resistor terminals for current limiting",
+                    "power_delivery": {
+                      "max_current_mA": 500
+                    },
+                    "protocol": {
+                      "role": [
+                        "input",
+                        "output"
+                      ],
+                      "type": "power"
+                    },
+                    "requires": [
+                      {
+                        "count": 1,
+                        "function": "RESISTOR_IN",
+                        "shareable_with": [
+                          "RESISTOR_OUT"
+                        ]
+                      },
+                      {
+                        "count": 1,
+                        "function": "RESISTOR_OUT",
+                        "shareable_with": [
+                          "RESISTOR_IN"
+                        ]
+                      }
+                    ],
+                    "id": "resistor_connection",
+                    "name": "Resistor Terminals"
+                  }
+                ],
+                "pin_count": 2,
+                "power_consumption_mW": 100,
+                "resources": [
+                  {
+                    "connector_type": "surface_mount",
+                    "functions": [
+                      {
+                        "description": "Resistor terminal 1",
+                        "direction": "bidirectional",
+                        "name": "RESISTOR_IN",
+                        "signal_class": "power"
+                      }
+                    ],
+                    "id": "terminal_1",
+                    "name": "Terminal 1"
+                  },
+                  {
+                    "connector_type": "surface_mount",
+                    "functions": [
+                      {
+                        "description": "Resistor terminal 2",
+                        "direction": "bidirectional",
+                        "name": "RESISTOR_OUT",
+                        "signal_class": "power"
+                      }
+                    ],
+                    "id": "terminal_2",
+                    "name": "Terminal 2"
+                  }
+                ],
+                "supply_voltage_V": [
+                  0,
+                  75
+                ]
+              },
+              {
+                "dimensions_mm": {
+                  "height": 0.45,
+                  "length": 1.6,
+                  "width": 0.8
+                },
+                "domain": "mechanical",
+                "interfaces": [
+                  {
+                    "id": "mounting",
+                    "name": "PCB Mount",
+                    "protocol": {
+                      "role": "mounting_point",
+                      "type": "surface_mount"
+                    },
+                    "requires": [
+                      {
+                        "count": 1,
+                        "function": "MOUNT"
+                      }
+                    ]
+                  }
+                ],
+                "resources": [
+                  {
+                    "connector_type": "surface_mount",
+                    "functions": [
+                      {
+                        "description": "Surface mount footprint",
+                        "name": "MOUNT"
+                      }
+                    ],
+                    "id": "package",
+                    "name": "0603 Package"
+                  }
+                ],
+                "weight_g": 0.002
+              }
+            ],
+            "manufacturer": "YAGEO",
+            "part_number": "RC0603FR-07120RL",
+            "schema_version": "1.1.0",
+            "tags": [
+              "resistor",
+              "0603",
+              "SMD",
+              "current-limiting",
+              "thick-film"
+            ],
+            "usage_notes": "For LED current limiting: R = (V_supply - V_LED) / I_LED. Example: With 5V supply and 3.2V white LED at 15mA, use R = (5-3.2)/0.015 = 120Ω.",
+            "warnings": [
+              "Ensure power dissipation stays within 100mW rating",
+              "P = I²R - for 15mA through 120Ω, dissipation is 27mW (safe)"
+            ],
+            "metadata": {
+              "id": "basic-fFVpV0slY_0ycHSXpgPcp",
+              "name": "120Ω 0603 Chip Resistor",
+              "categories": [
+                "passive",
+                "resistor"
+              ],
+              "datasheet_url": "https://www.yageo.com/datasheet/yageo/RC0603-series",
+              "lcsc_id": "C114640"
+            },
+            "node_geometry": {
+              "xScale": 1,
+              "yScale": 1,
+              "outline": {
+                "preset": "rounded_rectangle"
+              }
+            }
+          },
+          "templateId": "basic-fFVpV0slY_0ycHSXpgPcp",
+          "origin": "local",
+          "localVersion": 1,
+          "localVersionTimestamp": 1773849552881,
+          "isDirty": false,
+          "lastLoadedAt": 1773849552881
+        },
+        "basic-PZU-0KuWcc4o6v2QG-GCy": {
+          "part": {
+            "metadata": {
+              "id": "basic-PZU-0KuWcc4o6v2QG-GCy",
+              "name": "Pogo Pin Power Interface",
+              "categories": [
+                "connector",
+                "power"
+              ],
+              "description": "Two-pad pogo pin interface for 5V DC power supply. Exposed copper pads on bottom PCB for spring-loaded pogo pin contact. Provides VCC (5V) and GND connections.",
+              "manufacturer": "PCB Design",
+              "part_number": "CUSTOM-PWR-POGO-2PIN",
+              "tags": [
+                "pogo-pin",
+                "power",
+                "connector",
+                "5V",
+                "interface"
+              ],
+              "schema_version": "1.1.0"
+            },
+            "domains": [
+              {
+                "domain": "electrical",
+                "resources": [
+                  {
+                    "id": "vcc_pad",
+                    "name": "VCC Pad (5V)",
+                    "functions": [
+                      {
+                        "name": "VCC_5V",
+                        "description": "5V DC power supply from pogo pin contact",
+                        "direction": "source",
+                        "signal_class": "power"
+                      }
+                    ],
+                    "connector_type": "surface_mount",
+                    "current_rating": {
+                      "source": {
+                        "max_continuous_mA": 500,
+                        "max_peak_mA": 1000
+                      }
+                    }
+                  },
+                  {
+                    "id": "gnd_pad",
+                    "name": "GND Pad",
+                    "functions": [
+                      {
+                        "name": "GND",
+                        "description": "Ground reference from pogo pin contact",
+                        "direction": "sink",
+                        "signal_class": "ground"
+                      }
+                    ],
+                    "connector_type": "surface_mount",
+                    "current_rating": {
+                      "sink": {
+                        "max_continuous_mA": 500,
+                        "max_peak_mA": 1000
+                      }
+                    }
+                  }
+                ],
+                "interfaces": [
+                  {
+                    "id": "power_input",
+                    "name": "Power Output Interface",
+                    "protocol": {
+                      "type": "power",
+                      "role": "output"
+                    },
+                    "requires": [
+                      {
+                        "function": "VCC_5V",
+                        "count": 1,
+                        "shareable_with": [
+                          "GND"
+                        ]
+                      },
+                      {
+                        "function": "GND",
+                        "count": 1,
+                        "shareable_with": [
+                          "VCC_5V"
+                        ]
+                      }
+                    ],
+                    "description": "5V DC power output via pogo pin spring-loaded contacts",
+                    "power_delivery": {
+                      "max_voltage_V": 5,
+                      "max_current_mA": 500,
+                      "efficiency_percent": 100
+                    },
+                    "constraints": {
+                      "requires_connector_type": "pogo_pin"
+                    }
+                  }
+                ],
+                "supply_voltage_V": [
+                  4.5,
+                  5.5
+                ],
+                "power_consumption_mW": 0,
+                "pin_count": 2
+              },
+              {
+                "domain": "mechanical",
+                "resources": [
+                  {
+                    "id": "pad_vcc",
+                    "name": "VCC Pad",
+                    "functions": [
+                      {
+                        "name": "CONTACT_VCC",
+                        "description": "Exposed copper pad for pogo pin contact"
+                      }
+                    ],
+                    "connector_type": "surface_mount"
+                  },
+                  {
+                    "id": "pad_gnd",
+                    "name": "GND Pad",
+                    "functions": [
+                      {
+                        "name": "CONTACT_GND",
+                        "description": "Exposed copper pad for pogo pin contact"
+                      }
+                    ],
+                    "connector_type": "surface_mount"
+                  }
+                ],
+                "interfaces": [
+                  {
+                    "id": "pogo_contact",
+                    "name": "Pogo Pin Contact Interface",
+                    "protocol": {
+                      "type": "threaded_connection",
+                      "role": "mounting_point"
+                    },
+                    "requires": [
+                      {
+                        "function": "CONTACT_VCC",
+                        "count": 1
+                      },
+                      {
+                        "function": "CONTACT_GND",
+                        "count": 1
+                      }
+                    ],
+                    "description": "Flat copper pads for pogo pin spring-loaded contact. Must remain exposed on bottom PCB surface."
+                  }
+                ],
+                "package_type": "PCB_PAD",
+                "dimensions_mm": {
+                  "length": 4,
+                  "width": 2,
+                  "height": 0
+                },
+                "weight_g": 0
+              }
+            ],
+            "usage_notes": "Pogo pin pads should be 1.5-2mm diameter minimum for reliable contact. Gold plating recommended for better contact. Place on bottom PCB with no solder mask over pads.",
+            "compatibility_notes": "Compatible with standard spring-loaded pogo pins (1A-3A current rating typical). Ensure mating pogo pins have sufficient spring force (typically 20-50g per pin).",
+            "warnings": [
+              "Do not cover pads with solder mask - must remain exposed copper",
+              "Ensure bottom PCB surface remains flat - no components on this side",
+              "Pogo pin diameter typically 0.8-1.5mm - design pads accordingly"
+            ],
+            "node_geometry": {
+              "xScale": 1,
+              "yScale": 1,
+              "outline": {
+                "preset": "rounded_rectangle"
+              }
+            }
+          },
+          "templateId": "basic-PZU-0KuWcc4o6v2QG-GCy",
+          "origin": "local",
+          "localVersion": 1,
+          "localVersionTimestamp": 1773816930042,
+          "isDirty": false,
+          "lastLoadedAt": 1773816930042
+        },
+        "basic-9aBzuGN5SnidnS1KzTJq9": {
+          "part": {
+            "metadata": {
+              "id": "basic-9aBzuGN5SnidnS1KzTJq9",
+              "name": "VCC Pad (5V) - 3mm",
+              "categories": [
+                "connector",
+                "power"
+              ],
+              "description": "3mm diameter exposed copper pad for 5V DC power supply via pogo pin contact. Place on bottom PCB surface with no solder mask.",
+              "manufacturer": "PCB Design",
+              "part_number": "CUSTOM-VCC-PAD-3MM",
+              "tags": [
+                "pogo-pin",
+                "power",
+                "pad",
+                "5V",
+                "3mm"
+              ],
+              "schema_version": "1.1.0"
+            },
+            "domains": [
+              {
+                "domain": "electrical",
+                "resources": [
+                  {
+                    "id": "vcc_pad",
+                    "name": "VCC Pad (3mm)",
+                    "functions": [
+                      {
+                        "name": "VCC_5V",
+                        "description": "5V DC power supply from pogo pin contact",
+                        "direction": "source",
+                        "signal_class": "power"
+                      }
+                    ],
+                    "connector_type": "surface_mount",
+                    "current_rating": {
+                      "source": {
+                        "max_continuous_mA": 500,
+                        "max_peak_mA": 1000
+                      }
+                    }
+                  }
+                ],
+                "interfaces": [
+                  {
+                    "id": "power_output",
+                    "name": "5V Power Output",
+                    "protocol": {
+                      "type": "power",
+                      "role": "output"
+                    },
+                    "requires": [
+                      {
+                        "function": "VCC_5V",
+                        "count": 1
+                      }
+                    ],
+                    "description": "5V DC power output via exposed copper pad",
+                    "power_delivery": {
+                      "max_voltage_V": 5,
+                      "max_current_mA": 500
+                    }
+                  }
+                ],
+                "supply_voltage_V": [
+                  4.5,
+                  5.5
+                ],
+                "pin_count": 1
+              },
+              {
+                "domain": "mechanical",
+                "resources": [
+                  {
+                    "id": "pad",
+                    "name": "3mm Copper Pad",
+                    "functions": [
+                      {
+                        "name": "CONTACT",
+                        "description": "3mm diameter exposed copper pad"
+                      }
+                    ],
+                    "connector_type": "surface_mount"
+                  }
+                ],
+                "interfaces": [
+                  {
+                    "id": "pogo_contact",
+                    "name": "Pogo Pin Contact",
+                    "protocol": {
+                      "type": "surface_mount",
+                      "role": "mounting_point"
+                    },
+                    "requires": [
+                      {
+                        "function": "CONTACT",
+                        "count": 1
+                      }
+                    ],
+                    "description": "3mm diameter pad for pogo pin contact. Must remain exposed on bottom PCB surface."
+                  }
+                ],
+                "dimensions_mm": {
+                  "length": 3,
+                  "width": 3,
+                  "height": 0
+                }
+              }
+            ],
+            "usage_notes": "3mm diameter pad suitable for standard pogo pins (0.8-1.5mm diameter). Gold plating recommended. Must remain exposed - no solder mask over pad.",
+            "warnings": [
+              "Do not cover with solder mask - must remain exposed copper",
+              "Place on bottom PCB surface only",
+              "Ensure mating pogo pin aligns with pad center"
+            ],
+            "node_geometry": {
+              "xScale": 1,
+              "yScale": 1,
+              "outline": {
+                "preset": "rounded_rectangle"
+              }
+            }
+          },
+          "templateId": "basic-9aBzuGN5SnidnS1KzTJq9",
+          "origin": "local",
+          "localVersion": 1,
+          "localVersionTimestamp": 1773845433445,
+          "isDirty": false,
+          "lastLoadedAt": 1773845433445
+        },
+        "basic-5ayJSmQuSXa8oa3WuGRbJ": {
+          "part": {
+            "metadata": {
+              "id": "basic-5ayJSmQuSXa8oa3WuGRbJ",
+              "name": "GND Pad - 3mm",
+              "categories": [
+                "connector",
+                "power"
+              ],
+              "description": "3mm diameter exposed copper pad for ground reference via pogo pin contact. Place on bottom PCB surface with no solder mask.",
+              "manufacturer": "PCB Design",
+              "part_number": "CUSTOM-GND-PAD-3MM",
+              "tags": [
+                "pogo-pin",
+                "power",
+                "pad",
+                "ground",
+                "3mm"
+              ],
+              "schema_version": "1.1.0"
+            },
+            "domains": [
+              {
+                "domain": "electrical",
+                "resources": [
+                  {
+                    "id": "gnd_pad",
+                    "name": "GND Pad (3mm)",
+                    "functions": [
+                      {
+                        "name": "GND",
+                        "description": "Ground reference from pogo pin contact",
+                        "direction": "sink",
+                        "signal_class": "ground"
+                      }
+                    ],
+                    "connector_type": "surface_mount",
+                    "current_rating": {
+                      "sink": {
+                        "max_continuous_mA": 500,
+                        "max_peak_mA": 1000
+                      }
+                    }
+                  }
+                ],
+                "interfaces": [
+                  {
+                    "id": "ground_input",
+                    "name": "Ground Connection",
+                    "protocol": {
+                      "type": "power",
+                      "role": "input"
+                    },
+                    "requires": [
+                      {
+                        "function": "GND",
+                        "count": 1
+                      }
+                    ],
+                    "description": "Ground connection via exposed copper pad"
+                  }
+                ],
+                "pin_count": 1
+              },
+              {
+                "domain": "mechanical",
+                "resources": [
+                  {
+                    "id": "pad",
+                    "name": "3mm Copper Pad",
+                    "functions": [
+                      {
+                        "name": "CONTACT",
+                        "description": "3mm diameter exposed copper pad"
+                      }
+                    ],
+                    "connector_type": "surface_mount"
+                  }
+                ],
+                "interfaces": [
+                  {
+                    "id": "pogo_contact",
+                    "name": "Pogo Pin Contact",
+                    "protocol": {
+                      "type": "surface_mount",
+                      "role": "mounting_point"
+                    },
+                    "requires": [
+                      {
+                        "function": "CONTACT",
+                        "count": 1
+                      }
+                    ],
+                    "description": "3mm diameter pad for pogo pin contact. Must remain exposed on bottom PCB surface."
+                  }
+                ],
+                "dimensions_mm": {
+                  "length": 3,
+                  "width": 3,
+                  "height": 0
+                }
+              }
+            ],
+            "usage_notes": "3mm diameter pad suitable for standard pogo pins (0.8-1.5mm diameter). Gold plating recommended. Must remain exposed - no solder mask over pad.",
+            "warnings": [
+              "Do not cover with solder mask - must remain exposed copper",
+              "Place on bottom PCB surface only",
+              "Ensure mating pogo pin aligns with pad center"
+            ],
+            "node_geometry": {
+              "xScale": 1,
+              "yScale": 1,
+              "outline": {
+                "preset": "rounded_rectangle"
+              }
+            }
+          },
+          "templateId": "basic-5ayJSmQuSXa8oa3WuGRbJ",
+          "origin": "local",
+          "localVersion": 1,
+          "localVersionTimestamp": 1773845438768,
+          "isDirty": false,
+          "lastLoadedAt": 1773845438768
+        },
+        "basic-gxCY3nvSRgaEtUxKoBtL1": {
+          "part": {
+            "metadata": {
+              "id": "basic-gxCY3nvSRgaEtUxKoBtL1",
+              "name": "8-Pad Standard Interface",
+              "categories": [
+                "connector",
+                "power",
+                "data"
+              ],
+              "description": "Standardized 8-pad pogo pin interface for Maker Chip ecosystem. Provides power, ground, data, clock, and 4 general-purpose I/O lines. Each pad is 3mm diameter exposed copper for pogo pin contact.",
+              "manufacturer": "PCB Design",
+              "part_number": "MAKER-CHIP-8PAD-V1",
+              "tags": [
+                "pogo-pin",
+                "power",
+                "interface",
+                "data",
+                "standard",
+                "maker-chip"
+              ],
+              "schema_version": "1.1.0"
+            },
+            "domains": [
+              {
+                "domain": "electrical",
+                "resources": [
+                  {
+                    "id": "pad1_vcc",
+                    "name": "Pad 1 - VCC (5V)",
+                    "functions": [
+                      {
+                        "name": "VCC_5V",
+                        "description": "5V DC power supply from pogo pin",
+                        "direction": "source",
+                        "signal_class": "power"
+                      }
+                    ],
+                    "connector_type": "surface_mount",
+                    "current_rating": {
+                      "source": {
+                        "max_continuous_mA": 500,
+                        "max_peak_mA": 1000
+                      }
+                    }
+                  },
+                  {
+                    "id": "pad2_gnd",
+                    "name": "Pad 2 - GND",
+                    "functions": [
+                      {
+                        "name": "GND",
+                        "description": "Ground reference from pogo pin",
+                        "direction": "sink",
+                        "signal_class": "ground"
+                      }
+                    ],
+                    "connector_type": "surface_mount",
+                    "current_rating": {
+                      "sink": {
+                        "max_continuous_mA": 500,
+                        "max_peak_mA": 1000
+                      }
+                    }
+                  },
+                  {
+                    "id": "pad3_data",
+                    "name": "Pad 3 - DATA",
+                    "functions": [
+                      {
+                        "name": "DATA",
+                        "description": "Primary data line - I2C SDA, UART TX, or SPI MOSI",
+                        "direction": "bidirectional",
+                        "signal_class": "data"
+                      }
+                    ],
+                    "connector_type": "surface_mount"
+                  },
+                  {
+                    "id": "pad4_clk",
+                    "name": "Pad 4 - CLK",
+                    "functions": [
+                      {
+                        "name": "CLK",
+                        "description": "Clock signal - I2C SCL, UART RX, or SPI SCK",
+                        "direction": "bidirectional",
+                        "signal_class": "clock"
+                      }
+                    ],
+                    "connector_type": "surface_mount"
+                  },
+                  {
+                    "id": "pad5_cs_rst",
+                    "name": "Pad 5 - CS/RST",
+                    "functions": [
+                      {
+                        "name": "CS_RST",
+                        "description": "Chip Select or Reset signal",
+                        "direction": "bidirectional",
+                        "signal_class": "data"
+                      }
+                    ],
+                    "connector_type": "surface_mount"
+                  },
+                  {
+                    "id": "pad6_miso_gpio",
+                    "name": "Pad 6 - MISO/GPIO",
+                    "functions": [
+                      {
+                        "name": "MISO_GPIO",
+                        "description": "SPI MISO or General Purpose I/O",
+                        "direction": "bidirectional",
+                        "signal_class": "data"
+                      }
+                    ],
+                    "connector_type": "surface_mount"
+                  },
+                  {
+                    "id": "pad7_gpio_pwm",
+                    "name": "Pad 7 - GPIO/PWM",
+                    "functions": [
+                      {
+                        "name": "GPIO_PWM",
+                        "description": "General Purpose I/O or PWM output",
+                        "direction": "bidirectional",
+                        "signal_class": "data"
+                      }
+                    ],
+                    "connector_type": "surface_mount"
+                  },
+                  {
+                    "id": "pad8_analog",
+                    "name": "Pad 8 - ANALOG",
+                    "functions": [
+                      {
+                        "name": "ANALOG",
+                        "description": "ADC input or General Purpose I/O",
+                        "direction": "bidirectional",
+                        "signal_class": "sense"
+                      }
+                    ],
+                    "connector_type": "surface_mount"
+                  }
+                ],
+                "interfaces": [
+                  {
+                    "id": "power_interface",
+                    "name": "Power Interface",
+                    "protocol": {
+                      "role": "output",
+                      "type": "power"
+                    },
+                    "requires": [
+                      {
+                        "count": 1,
+                        "function": "VCC_5V"
+                      },
+                      {
+                        "count": 1,
+                        "function": "GND"
+                      }
+                    ],
+                    "description": "Power supply outputs (5V and Ground)",
+                    "power_delivery": {
+                      "max_current_mA": 500,
+                      "max_voltage_V": 5
+                    }
+                  },
+                  {
+                    "id": "data_interface",
+                    "name": "Data Interface",
+                    "protocol": {
+                      "role": "peer",
+                      "type": "digital"
+                    },
+                    "requires": [
+                      {
+                        "count": 1,
+                        "function": "DATA"
+                      },
+                      {
+                        "count": 1,
+                        "function": "CLK"
+                      }
+                    ],
+                    "description": "Primary data communication lines"
+                  },
+                  {
+                    "id": "gpio_interface",
+                    "name": "GPIO Interface",
+                    "protocol": {
+                      "role": "peer",
+                      "type": "digital"
+                    },
+                    "requires": [
+                      {
+                        "count": 1,
+                        "function": "CS_RST"
+                      },
+                      {
+                        "count": 1,
+                        "function": "MISO_GPIO"
+                      },
+                      {
+                        "count": 1,
+                        "function": "GPIO_PWM"
+                      },
+                      {
+                        "count": 1,
+                        "function": "ANALOG"
+                      }
+                    ],
+                    "description": "General purpose I/O lines"
+                  }
+                ],
+                "pin_count": 8,
+                "supply_voltage_V": [
+                  4.5,
+                  5.5
+                ]
+              },
+              {
+                "domain": "mechanical",
+                "resources": [
+                  {
+                    "connector_type": "surface_mount",
+                    "functions": [
+                      {
+                        "description": "3mm diameter exposed copper pad",
+                        "name": "PAD1"
+                      },
+                      {
+                        "description": "3mm diameter exposed copper pad",
+                        "name": "PAD2"
+                      },
+                      {
+                        "description": "3mm diameter exposed copper pad",
+                        "name": "PAD3"
+                      },
+                      {
+                        "description": "3mm diameter exposed copper pad",
+                        "name": "PAD4"
+                      },
+                      {
+                        "description": "3mm diameter exposed copper pad",
+                        "name": "PAD5"
+                      },
+                      {
+                        "description": "3mm diameter exposed copper pad",
+                        "name": "PAD6"
+                      },
+                      {
+                        "description": "3mm diameter exposed copper pad",
+                        "name": "PAD7"
+                      },
+                      {
+                        "description": "3mm diameter exposed copper pad",
+                        "name": "PAD8"
+                      }
+                    ],
+                    "id": "pads",
+                    "name": "8 Pogo Pin Pads"
+                  }
+                ],
+                "interfaces": [
+                  {
+                    "description": "8 × 3mm diameter pads for pogo pin spring-loaded contact. Must remain exposed on bottom PCB surface - no solder mask.",
+                    "id": "pogo_contact",
+                    "name": "Pogo Pin Contact Interface",
+                    "protocol": {
+                      "role": "mounting_point",
+                      "type": "surface_mount"
+                    },
+                    "requires": [
+                      {
+                        "count": 8,
+                        "function": "PAD1"
+                      }
+                    ]
+                  }
+                ],
+                "package_type": "PCB_PADS",
+                "dimensions_mm": {
+                  "height": 0,
+                  "length": 20,
+                  "width": 8
+                }
+              }
+            ],
+            "usage_notes": "All 8 pads are 3mm diameter exposed copper. Standard pad layout enables interoperability across Maker Chip ecosystem. Place on bottom PCB surface with no solder mask over pads.",
+            "compatibility_notes": "Compatible with standard spring-loaded pogo pins (1A-3A current rating typical). Ensure mating interface follows the 8-pad standard layout for proper connectivity.",
+            "warnings": [
+              "Do not cover pads with solder mask - must remain exposed copper",
+              "Place on bottom PCB surface only",
+              "Ensure mating pogo pins align with pad positions",
+              "Standard interface enables chip swapping and ecosystem compatibility"
+            ],
+            "node_geometry": {
+              "xScale": 1,
+              "yScale": 1,
+              "outline": {
+                "preset": "rounded_rectangle"
+              }
+            }
+          },
+          "templateId": "basic-gxCY3nvSRgaEtUxKoBtL1",
+          "origin": "local",
+          "localVersion": 1,
+          "localVersionTimestamp": 1773848534964,
+          "isDirty": false,
+          "lastLoadedAt": 1773848534964
+        },
+        "basic-NLkZFikHo6YDudwjzZbog": {
+          "part": {
+            "metadata": {
+              "id": "basic-NLkZFikHo6YDudwjzZbog",
+              "name": "VCC Pad (5V) - 3mm",
+              "categories": [
+                "connector",
+                "power"
+              ],
+              "description": "3mm diameter exposed copper pad for 5V DC power supply via pogo pin contact. Pad 1 of 8-Pad Standard Interface.",
+              "manufacturer": "PCB Design",
+              "part_number": "MAKER-CHIP-PAD1-VCC",
+              "tags": [
+                "pogo-pin",
+                "power",
+                "pad",
+                "5V",
+                "3mm",
+                "maker-chip"
+              ],
+              "schema_version": "1.1.0"
+            },
+            "domains": [
+              {
+                "domain": "electrical",
+                "resources": [
+                  {
+                    "id": "vcc_pad",
+                    "name": "VCC Pad (3mm)",
+                    "functions": [
+                      {
+                        "name": "VCC_5V",
+                        "description": "5V DC power supply from pogo pin contact",
+                        "direction": "source",
+                        "signal_class": "power"
+                      }
+                    ],
+                    "connector_type": "surface_mount",
+                    "current_rating": {
+                      "source": {
+                        "max_continuous_mA": 500,
+                        "max_peak_mA": 1000
+                      }
+                    }
+                  }
+                ],
+                "interfaces": [
+                  {
+                    "id": "power_output",
+                    "name": "5V Power Output",
+                    "protocol": {
+                      "type": "power",
+                      "role": "output"
+                    },
+                    "requires": [
+                      {
+                        "function": "VCC_5V",
+                        "count": 1
+                      }
+                    ],
+                    "description": "5V DC power output via exposed copper pad",
+                    "power_delivery": {
+                      "max_voltage_V": 5,
+                      "max_current_mA": 500
+                    }
+                  }
+                ],
+                "supply_voltage_V": [
+                  4.5,
+                  5.5
+                ],
+                "pin_count": 1
+              },
+              {
+                "domain": "mechanical",
+                "resources": [
+                  {
+                    "id": "pad",
+                    "name": "3mm Copper Pad",
+                    "functions": [
+                      {
+                        "name": "CONTACT",
+                        "description": "3mm diameter exposed copper pad"
+                      }
+                    ],
+                    "connector_type": "surface_mount"
+                  }
+                ],
+                "interfaces": [
+                  {
+                    "id": "pogo_contact",
+                    "name": "Pogo Pin Contact",
+                    "protocol": {
+                      "type": "surface_mount",
+                      "role": "mounting_point"
+                    },
+                    "requires": [
+                      {
+                        "function": "CONTACT",
+                        "count": 1
+                      }
+                    ],
+                    "description": "3mm diameter pad for pogo pin contact. Must remain exposed on bottom PCB surface."
+                  }
+                ],
+                "dimensions_mm": {
+                  "length": 3,
+                  "width": 3,
+                  "height": 0
+                }
+              }
+            ],
+            "usage_notes": "3mm diameter pad suitable for standard pogo pins (0.8-1.5mm diameter). Gold plating recommended. Must remain exposed - no solder mask over pad.",
+            "warnings": [
+              "Do not cover with solder mask - must remain exposed copper",
+              "Place on bottom PCB surface only",
+              "Ensure mating pogo pin aligns with pad center"
+            ],
+            "node_geometry": {
+              "xScale": 1,
+              "yScale": 1,
+              "outline": {
+                "preset": "rounded_rectangle"
+              }
+            }
+          },
+          "templateId": "basic-NLkZFikHo6YDudwjzZbog",
+          "origin": "local",
+          "localVersion": 1,
+          "localVersionTimestamp": 1773848708575,
+          "isDirty": false,
+          "lastLoadedAt": 1773848708575
+        },
+        "basic-848t6FXjZg-gFcYJHxtV4": {
+          "part": {
+            "domains": [
+              {
+                "domain": "electrical",
+                "pin_count": 1,
+                "interfaces": [
+                  {
+                    "name": "Ground Connection",
+                    "protocol": {
+                      "type": "power",
+                      "role": "output"
+                    },
+                    "description": "Ground connection via exposed copper pad",
+                    "requires": [
+                      {
+                        "function": "GND",
+                        "count": 1
+                      }
+                    ],
+                    "id": "ground_connection"
+                  }
+                ],
+                "resources": [
+                  {
+                    "name": "GND Pad (3mm)",
+                    "current_rating": {
+                      "sink": {
+                        "max_continuous_mA": 500,
+                        "max_peak_mA": 1000
+                      }
+                    },
+                    "functions": [
+                      {
+                        "name": "GND",
+                        "description": "Ground reference from pogo pin contact",
+                        "signal_class": "ground",
+                        "direction": "sink"
+                      }
+                    ],
+                    "connector_type": "surface_mount",
+                    "id": "gnd_pad"
+                  }
+                ]
+              },
+              {
+                "resources": [
+                  {
+                    "id": "pad",
+                    "functions": [
+                      {
+                        "description": "3mm diameter exposed copper pad",
+                        "name": "CONTACT"
+                      }
+                    ],
+                    "connector_type": "surface_mount",
+                    "name": "3mm Copper Pad"
+                  }
+                ],
+                "interfaces": [
+                  {
+                    "name": "Pogo Pin Contact",
+                    "protocol": {
+                      "type": "surface_mount",
+                      "role": "mounting_point"
+                    },
+                    "id": "pogo_contact",
+                    "requires": [
+                      {
+                        "count": 1,
+                        "function": "CONTACT"
+                      }
+                    ]
+                  }
+                ],
+                "domain": "mechanical",
+                "dimensions_mm": {
+                  "height": 0,
+                  "length": 3,
+                  "width": 3
+                }
+              }
+            ],
+            "warnings": [
+              "Do not cover with solder mask - must remain exposed copper",
+              "Place on bottom PCB surface only",
+              "Ensure mating pogo pin aligns with pad center"
+            ],
+            "metadata": {
+              "categories": [
+                "connector",
+                "power"
+              ],
+              "tags": [
+                "pogo-pin",
+                "power",
+                "pad",
+                "ground",
+                "3mm",
+                "maker-chip"
+              ],
+              "id": "basic-848t6FXjZg-gFcYJHxtV4",
+              "manufacturer": "PCB Design",
+              "description": "3mm diameter exposed copper pad for ground reference via pogo pin contact. Pad 2 of 8-Pad Standard Interface.",
+              "schema_version": "1.1.0",
+              "name": "GND Pad - 3mm",
+              "part_number": "MAKER-CHIP-PAD2-GND"
+            },
+            "node_geometry": {
+              "xScale": 1,
+              "yScale": 1,
+              "outline": {
+                "preset": "rounded_rectangle"
+              }
+            },
+            "usage_notes": "3mm diameter pad for pogo pin contact. Gold plating recommended. Must remain exposed - no solder mask over pad."
+          },
+          "templateId": "basic-848t6FXjZg-gFcYJHxtV4",
+          "origin": "local",
+          "localVersion": 1,
+          "localVersionTimestamp": 1775253934504,
+          "isDirty": false,
+          "lastLoadedAt": 1775253934504
+        },
+        "basic-VYPSKHr3RS2GLnCUEqvgd": {
+          "part": {
+            "usage_notes": "3mm diameter pad for pogo pin contact. Gold plating recommended.",
+            "domains": [
+              {
+                "interfaces": [
+                  {
+                    "description": "Primary data line via pogo pin contact",
+                    "protocol": {
+                      "type": "gpio",
+                      "role": "output"
+                    },
+                    "name": "DATA Signal",
+                    "requires": [
+                      {
+                        "count": 1,
+                        "function": "DATA"
+                      }
+                    ],
+                    "id": "data_signal"
+                  }
+                ],
+                "resources": [
+                  {
+                    "functions": [
+                      {
+                        "description": "Primary data signal from pogo pin (MOSI/SDA)",
+                        "name": "DATA",
+                        "signal_class": "digital",
+                        "direction": "source"
+                      }
+                    ],
+                    "id": "data_pad",
+                    "name": "DATA Pad (3mm)",
+                    "connector_type": "surface_mount"
+                  }
+                ],
+                "domain": "electrical",
+                "pin_count": 1
+              },
+              {
+                "dimensions_mm": {
+                  "height": 0,
+                  "length": 3,
+                  "width": 3
+                },
+                "domain": "mechanical",
+                "interfaces": [
+                  {
+                    "requires": [
+                      {
+                        "count": 1,
+                        "function": "CONTACT"
+                      }
+                    ],
+                    "id": "pogo_contact",
+                    "protocol": {
+                      "role": "mounting_point",
+                      "type": "surface_mount"
+                    },
+                    "name": "Pogo Pin Contact"
+                  }
+                ],
+                "resources": [
+                  {
+                    "id": "pad",
+                    "functions": [
+                      {
+                        "name": "CONTACT",
+                        "description": "3mm diameter exposed copper pad"
+                      }
+                    ],
+                    "connector_type": "surface_mount",
+                    "name": "3mm Copper Pad"
+                  }
+                ]
+              }
+            ],
+            "warnings": [
+              "Do not cover with solder mask",
+              "Place on bottom PCB surface only"
+            ],
+            "metadata": {
+              "part_number": "MAKER-CHIP-PAD3-DATA",
+              "description": "3mm copper pad for primary data line (MOSI/SDA). Pad 3 of 8-Pad Standard Interface.",
+              "schema_version": "1.1.0",
+              "name": "Pad 3 - DATA (3mm)",
+              "tags": [
+                "pogo-pin",
+                "signal",
+                "pad",
+                "data",
+                "MOSI",
+                "SDA",
+                "3mm",
+                "maker-chip"
+              ],
+              "manufacturer": "PCB Design",
+              "id": "basic-VYPSKHr3RS2GLnCUEqvgd",
+              "categories": [
+                "connector",
+                "signal"
+              ]
+            },
+            "node_geometry": {
+              "xScale": 1,
+              "yScale": 1,
+              "outline": {
+                "preset": "rounded_rectangle"
+              }
+            }
+          },
+          "templateId": "basic-VYPSKHr3RS2GLnCUEqvgd",
+          "origin": "local",
+          "localVersion": 1,
+          "localVersionTimestamp": 1775253214911,
+          "isDirty": false,
+          "lastLoadedAt": 1775253214911
+        },
+        "basic-IFiLhx3i8ZHFZPVNEg8n0": {
+          "part": {
+            "domains": [
+              {
+                "domain": "electrical",
+                "pin_count": 1,
+                "interfaces": [
+                  {
+                    "id": "clk_signal",
+                    "description": "Clock line via pogo pin contact",
+                    "protocol": {
+                      "type": "gpio",
+                      "role": "output"
+                    },
+                    "name": "CLK Signal",
+                    "requires": [
+                      {
+                        "function": "CLK",
+                        "count": 1
+                      }
+                    ]
+                  }
+                ],
+                "resources": [
+                  {
+                    "id": "clk_pad",
+                    "functions": [
+                      {
+                        "direction": "source",
+                        "signal_class": "digital",
+                        "name": "CLK",
+                        "description": "Clock signal from pogo pin (SCK/SCL)"
+                      }
+                    ],
+                    "name": "CLK Pad (3mm)",
+                    "connector_type": "surface_mount"
+                  }
+                ]
+              },
+              {
+                "domain": "mechanical",
+                "dimensions_mm": {
+                  "length": 3,
+                  "width": 3,
+                  "height": 0
+                },
+                "interfaces": [
+                  {
+                    "protocol": {
+                      "type": "surface_mount",
+                      "role": "mounting_point"
+                    },
+                    "name": "Pogo Pin Contact",
+                    "id": "pogo_contact",
+                    "requires": [
+                      {
+                        "function": "CONTACT",
+                        "count": 1
+                      }
+                    ]
+                  }
+                ],
+                "resources": [
+                  {
+                    "connector_type": "surface_mount",
+                    "name": "3mm Copper Pad",
+                    "id": "pad",
+                    "functions": [
+                      {
+                        "name": "CONTACT",
+                        "description": "3mm diameter exposed copper pad"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "metadata": {
+              "description": "3mm copper pad for clock line (SCK/SCL). Pad 4 of 8-Pad Standard Interface.",
+              "schema_version": "1.1.0",
+              "name": "Pad 4 - CLK (3mm)",
+              "part_number": "MAKER-CHIP-PAD4-CLK",
+              "categories": [
+                "connector",
+                "signal"
+              ],
+              "id": "basic-IFiLhx3i8ZHFZPVNEg8n0",
+              "manufacturer": "PCB Design",
+              "tags": [
+                "pogo-pin",
+                "signal",
+                "pad",
+                "clock",
+                "SCK",
+                "SCL",
+                "3mm",
+                "maker-chip"
+              ]
+            },
+            "node_geometry": {
+              "xScale": 1,
+              "yScale": 1,
+              "outline": {
+                "preset": "rounded_rectangle"
+              }
+            },
+            "warnings": [
+              "Do not cover with solder mask",
+              "Place on bottom PCB surface only"
+            ],
+            "usage_notes": "3mm diameter pad for pogo pin contact. Gold plating recommended."
+          },
+          "templateId": "basic-IFiLhx3i8ZHFZPVNEg8n0",
+          "origin": "local",
+          "localVersion": 1,
+          "localVersionTimestamp": 1775253220594,
+          "isDirty": false,
+          "lastLoadedAt": 1775253220594
+        },
+        "basic-rVRacUFPbQDq3LhNcpwAH": {
+          "part": {
+            "metadata": {
+              "id": "basic-rVRacUFPbQDq3LhNcpwAH",
+              "tags": [
+                "pogo-pin",
+                "signal",
+                "pad",
+                "reset",
+                "chip-select",
+                "3mm",
+                "maker-chip"
+              ],
+              "manufacturer": "PCB Design",
+              "categories": [
+                "connector",
+                "signal"
+              ],
+              "part_number": "MAKER-CHIP-PAD5-CSRST",
+              "description": "3mm copper pad for chip select / reset line. Pad 5 of 8-Pad Standard Interface.",
+              "schema_version": "1.1.0",
+              "name": "Pad 5 - CS/RST (3mm)"
+            },
+            "node_geometry": {
+              "xScale": 1,
+              "yScale": 1,
+              "outline": {
+                "preset": "rounded_rectangle"
+              }
+            },
+            "warnings": [
+              "Do not cover with solder mask",
+              "Place on bottom PCB surface only"
+            ],
+            "domains": [
+              {
+                "resources": [
+                  {
+                    "name": "CS/RST Pad (3mm)",
+                    "connector_type": "surface_mount",
+                    "functions": [
+                      {
+                        "signal_class": "digital",
+                        "direction": "source",
+                        "name": "RESET",
+                        "description": "Chip select / active-low reset from pogo pin"
+                      }
+                    ],
+                    "id": "reset_pad"
+                  }
+                ],
+                "interfaces": [
+                  {
+                    "id": "reset_signal",
+                    "name": "CS/RST Signal",
+                    "protocol": {
+                      "role": "output",
+                      "type": "gpio"
+                    },
+                    "description": "Chip select / reset line via pogo pin contact",
+                    "requires": [
+                      {
+                        "function": "RESET",
+                        "count": 1
+                      }
+                    ]
+                  }
+                ],
+                "domain": "electrical",
+                "pin_count": 1
+              },
+              {
+                "domain": "mechanical",
+                "dimensions_mm": {
+                  "height": 0,
+                  "width": 3,
+                  "length": 3
+                },
+                "interfaces": [
+                  {
+                    "id": "pogo_contact",
+                    "requires": [
+                      {
+                        "count": 1,
+                        "function": "CONTACT"
+                      }
+                    ],
+                    "protocol": {
+                      "role": "mounting_point",
+                      "type": "surface_mount"
+                    },
+                    "name": "Pogo Pin Contact"
+                  }
+                ],
+                "resources": [
+                  {
+                    "functions": [
+                      {
+                        "description": "3mm diameter exposed copper pad",
+                        "name": "CONTACT"
+                      }
+                    ],
+                    "id": "pad",
+                    "connector_type": "surface_mount",
+                    "name": "3mm Copper Pad"
+                  }
+                ]
+              }
+            ],
+            "usage_notes": "3mm diameter pad for pogo pin contact. Gold plating recommended."
+          },
+          "templateId": "basic-rVRacUFPbQDq3LhNcpwAH",
+          "origin": "local",
+          "localVersion": 1,
+          "localVersionTimestamp": 1775253226873,
+          "isDirty": false,
+          "lastLoadedAt": 1775253226873
+        },
+        "basic-_xR1FA-npyLAzmcU1FuL4": {
+          "part": {
+            "usage_notes": "3mm diameter pad for pogo pin contact. Gold plating recommended. MISO is an output from the MCU — this pad receives that signal.",
+            "node_geometry": {
+              "xScale": 1,
+              "yScale": 1,
+              "outline": {
+                "preset": "rounded_rectangle"
+              }
+            },
+            "metadata": {
+              "id": "basic-_xR1FA-npyLAzmcU1FuL4",
+              "manufacturer": "PCB Design",
+              "tags": [
+                "pogo-pin",
+                "signal",
+                "pad",
+                "MISO",
+                "GPIO",
+                "3mm",
+                "maker-chip"
+              ],
+              "categories": [
+                "connector",
+                "signal"
+              ],
+              "part_number": "MAKER-CHIP-PAD6-MISO",
+              "schema_version": "1.1.0",
+              "description": "3mm copper pad for MISO / general GPIO. Pad 6 of 8-Pad Standard Interface.",
+              "name": "Pad 6 - MISO/GPIO (3mm)"
+            },
+            "warnings": [
+              "Do not cover with solder mask",
+              "Place on bottom PCB surface only"
+            ],
+            "domains": [
+              {
+                "interfaces": [
+                  {
+                    "protocol": {
+                      "role": "input",
+                      "type": "gpio"
+                    },
+                    "name": "MISO Signal",
+                    "description": "MISO / GPIO line via pogo pin contact",
+                    "requires": [
+                      {
+                        "function": "MISO",
+                        "count": 1
+                      }
+                    ],
+                    "id": "miso_signal"
+                  }
+                ],
+                "resources": [
+                  {
+                    "connector_type": "surface_mount",
+                    "name": "MISO Pad (3mm)",
+                    "id": "miso_pad",
+                    "functions": [
+                      {
+                        "name": "MISO",
+                        "description": "MISO data output / GPIO from pogo pin",
+                        "signal_class": "digital",
+                        "direction": "sink"
+                      }
+                    ]
+                  }
+                ],
+                "domain": "electrical",
+                "pin_count": 1
+              },
+              {
+                "domain": "mechanical",
+                "dimensions_mm": {
+                  "height": 0,
+                  "length": 3,
+                  "width": 3
+                },
+                "resources": [
+                  {
+                    "functions": [
+                      {
+                        "description": "3mm diameter exposed copper pad",
+                        "name": "CONTACT"
+                      }
+                    ],
+                    "id": "pad",
+                    "name": "3mm Copper Pad",
+                    "connector_type": "surface_mount"
+                  }
+                ],
+                "interfaces": [
+                  {
+                    "id": "pogo_contact",
+                    "requires": [
+                      {
+                        "function": "CONTACT",
+                        "count": 1
+                      }
+                    ],
+                    "protocol": {
+                      "role": "mounting_point",
+                      "type": "surface_mount"
+                    },
+                    "name": "Pogo Pin Contact"
+                  }
+                ]
+              }
+            ]
+          },
+          "templateId": "basic-_xR1FA-npyLAzmcU1FuL4",
+          "origin": "local",
+          "localVersion": 1,
+          "localVersionTimestamp": 1775253233547,
+          "isDirty": false,
+          "lastLoadedAt": 1775253233547
+        },
+        "basic-uaMJdW7PbbgWcAmpVx_dB": {
+          "part": {
+            "usage_notes": "3mm diameter pad for pogo pin contact. Gold plating recommended. PWM output from ATtiny85 PB4 — this pad receives that signal.",
+            "domains": [
+              {
+                "interfaces": [
+                  {
+                    "requires": [
+                      {
+                        "count": 1,
+                        "function": "GPIO_PWM"
+                      }
+                    ],
+                    "description": "GPIO / PWM line via pogo pin contact",
+                    "protocol": {
+                      "role": "input",
+                      "type": "gpio"
+                    },
+                    "name": "GPIO/PWM Signal",
+                    "id": "pwm_signal"
+                  }
+                ],
+                "resources": [
+                  {
+                    "name": "GPIO/PWM Pad (3mm)",
+                    "connector_type": "surface_mount",
+                    "functions": [
+                      {
+                        "direction": "sink",
+                        "signal_class": "digital",
+                        "description": "GPIO / PWM signal from pogo pin",
+                        "name": "GPIO_PWM"
+                      }
+                    ],
+                    "id": "pwm_pad"
+                  }
+                ],
+                "domain": "electrical",
+                "pin_count": 1
+              },
+              {
+                "dimensions_mm": {
+                  "width": 3,
+                  "length": 3,
+                  "height": 0
+                },
+                "domain": "mechanical",
+                "interfaces": [
+                  {
+                    "protocol": {
+                      "type": "surface_mount",
+                      "role": "mounting_point"
+                    },
+                    "name": "Pogo Pin Contact",
+                    "id": "pogo_contact",
+                    "requires": [
+                      {
+                        "count": 1,
+                        "function": "CONTACT"
+                      }
+                    ]
+                  }
+                ],
+                "resources": [
+                  {
+                    "name": "3mm Copper Pad",
+                    "connector_type": "surface_mount",
+                    "id": "pad",
+                    "functions": [
+                      {
+                        "description": "3mm diameter exposed copper pad",
+                        "name": "CONTACT"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "node_geometry": {
+              "xScale": 1,
+              "yScale": 1,
+              "outline": {
+                "preset": "rounded_rectangle"
+              }
+            },
+            "metadata": {
+              "part_number": "MAKER-CHIP-PAD7-PWM",
+              "name": "Pad 7 - GPIO/PWM (3mm)",
+              "description": "3mm copper pad for general GPIO / PWM output. Pad 7 of 8-Pad Standard Interface.",
+              "schema_version": "1.1.0",
+              "tags": [
+                "pogo-pin",
+                "signal",
+                "pad",
+                "GPIO",
+                "PWM",
+                "3mm",
+                "maker-chip"
+              ],
+              "manufacturer": "PCB Design",
+              "id": "basic-uaMJdW7PbbgWcAmpVx_dB",
+              "categories": [
+                "connector",
+                "signal"
+              ]
+            },
+            "warnings": [
+              "Do not cover with solder mask",
+              "Place on bottom PCB surface only"
+            ]
+          },
+          "templateId": "basic-uaMJdW7PbbgWcAmpVx_dB",
+          "origin": "local",
+          "localVersion": 1,
+          "localVersionTimestamp": 1775253239848,
+          "isDirty": false,
+          "lastLoadedAt": 1775253239848
+        },
+        "basic-bNdPFE75fJqbc11ZdhxV5": {
+          "part": {
+            "warnings": [
+              "Do not cover with solder mask",
+              "Place on bottom PCB surface only"
+            ],
+            "node_geometry": {
+              "xScale": 1,
+              "yScale": 1,
+              "outline": {
+                "preset": "rounded_rectangle"
+              }
+            },
+            "metadata": {
+              "description": "3mm copper pad for analog / ADC input. Pad 8 of 8-Pad Standard Interface.",
+              "schema_version": "1.1.0",
+              "name": "Pad 8 - ANALOG (3mm)",
+              "part_number": "MAKER-CHIP-PAD8-ANALOG",
+              "categories": [
+                "connector",
+                "signal"
+              ],
+              "manufacturer": "PCB Design",
+              "id": "basic-bNdPFE75fJqbc11ZdhxV5",
+              "tags": [
+                "pogo-pin",
+                "signal",
+                "pad",
+                "analog",
+                "ADC",
+                "3mm",
+                "maker-chip"
+              ]
+            },
+            "domains": [
+              {
+                "pin_count": 1,
+                "domain": "electrical",
+                "resources": [
+                  {
+                    "connector_type": "surface_mount",
+                    "name": "ANALOG Pad (3mm)",
+                    "id": "analog_pad",
+                    "functions": [
+                      {
+                        "description": "Analog / ADC signal from pogo pin",
+                        "name": "ANALOG",
+                        "direction": "source",
+                        "signal_class": "analog"
+                      }
+                    ]
+                  }
+                ],
+                "interfaces": [
+                  {
+                    "id": "analog_signal",
+                    "requires": [
+                      {
+                        "count": 1,
+                        "function": "ANALOG"
+                      }
+                    ],
+                    "description": "Analog / ADC line via pogo pin contact",
+                    "protocol": {
+                      "type": "gpio",
+                      "role": "output"
+                    },
+                    "name": "ANALOG Signal"
+                  }
+                ]
+              },
+              {
+                "interfaces": [
+                  {
+                    "name": "Pogo Pin Contact",
+                    "protocol": {
+                      "role": "mounting_point",
+                      "type": "surface_mount"
+                    },
+                    "requires": [
+                      {
+                        "count": 1,
+                        "function": "CONTACT"
+                      }
+                    ],
+                    "id": "pogo_contact"
+                  }
+                ],
+                "resources": [
+                  {
+                    "functions": [
+                      {
+                        "name": "CONTACT",
+                        "description": "3mm diameter exposed copper pad"
+                      }
+                    ],
+                    "id": "pad",
+                    "name": "3mm Copper Pad",
+                    "connector_type": "surface_mount"
+                  }
+                ],
+                "domain": "mechanical",
+                "dimensions_mm": {
+                  "length": 3,
+                  "width": 3,
+                  "height": 0
+                }
+              }
+            ],
+            "usage_notes": "3mm diameter pad for pogo pin contact. Gold plating recommended."
+          },
+          "templateId": "basic-bNdPFE75fJqbc11ZdhxV5",
+          "origin": "local",
+          "localVersion": 1,
+          "localVersionTimestamp": 1775253245385,
+          "isDirty": false,
+          "lastLoadedAt": 1775253245385
+        },
+        "basic-1AGk7mINFuKOXGWMz54X8": {
+          "part": {
+            "warnings": [
+              "Do not exceed 5.5V on VCC",
+              "Max 40mA per I/O pin, 200mA total",
+              "LED pins shared with pogo pads - avoid external loads during LED operation",
+              "Add 100nF decoupling cap between VCC and GND"
+            ],
+            "metadata": {
+              "description": "8-bit AVR microcontroller in SOP-8. Controls 4 LEDs individually via GPIO. ISP programmable via pads 3-6.",
+              "schema_version": "1.1.0",
+              "lcsc_id": "C89852",
+              "part_number": "ATtiny85-20SU",
+              "id": "basic-1AGk7mINFuKOXGWMz54X8",
+              "tags": [
+                "ATtiny85",
+                "AVR",
+                "SOP-8",
+                "microcontroller",
+                "maker-chip"
+              ],
+              "name": "ATtiny85 MCU",
+              "categories": [
+                "microcontroller",
+                "IC"
+              ],
+              "manufacturer": "Microchip"
+            },
+            "node_geometry": {
+              "xScale": 1,
+              "yScale": 1,
+              "outline": {
+                "preset": "rounded_rectangle"
+              }
+            },
+            "domains": [
+              {
+                "resources": [
+                  {
+                    "name": "Pin 1 - RESET/PB5",
+                    "connector_type": "surface_mount",
+                    "functions": [
+                      {
+                        "name": "RESET",
+                        "description": "Active-low reset / PB5 GPIO",
+                        "direction": "sink",
+                        "signal_class": "digital"
+                      }
+                    ],
+                    "id": "pin1_reset"
+                  },
+                  {
+                    "name": "Pin 2 - PB3/ADC3",
+                    "connector_type": "surface_mount",
+                    "functions": [
+                      {
+                        "signal_class": "analog",
+                        "direction": "sink",
+                        "description": "PB3 GPIO / ADC3 analog input",
+                        "name": "ANALOG"
+                      },
+                      {
+                        "signal_class": "power",
+                        "direction": "source",
+                        "description": "PB3 driving LED 3 anode",
+                        "name": "LED3_VCC"
+                      }
+                    ],
+                    "id": "pin2_pb3"
+                  },
+                  {
+                    "name": "Pin 3 - PB4/PWM",
+                    "connector_type": "surface_mount",
+                    "id": "pin3_pb4",
+                    "functions": [
+                      {
+                        "name": "GPIO_PWM",
+                        "description": "PB4 GPIO / OC1B PWM output",
+                        "direction": "source",
+                        "signal_class": "digital"
+                      },
+                      {
+                        "description": "PB4 driving LED 4 anode",
+                        "name": "LED4_VCC",
+                        "signal_class": "power",
+                        "direction": "source"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "pin4_gnd",
+                    "functions": [
+                      {
+                        "direction": "sink",
+                        "signal_class": "ground",
+                        "name": "GND",
+                        "description": "Ground"
+                      }
+                    ],
+                    "connector_type": "surface_mount",
+                    "name": "Pin 4 - GND"
+                  },
+                  {
+                    "id": "pin5_pb0",
+                    "functions": [
+                      {
+                        "direction": "sink",
+                        "signal_class": "digital",
+                        "name": "DATA",
+                        "description": "PB0 MOSI (ISP) / SDA (I2C) / GPIO"
+                      },
+                      {
+                        "description": "PB0 driving LED 1 anode",
+                        "name": "LED1_VCC",
+                        "signal_class": "power",
+                        "direction": "source"
+                      }
+                    ],
+                    "name": "Pin 5 - PB0/MOSI/SDA",
+                    "connector_type": "surface_mount"
+                  },
+                  {
+                    "functions": [
+                      {
+                        "name": "MISO",
+                        "description": "PB1 MISO (ISP) / GPIO",
+                        "signal_class": "digital",
+                        "direction": "source"
+                      },
+                      {
+                        "signal_class": "power",
+                        "direction": "source",
+                        "description": "PB1 driving LED 2 anode",
+                        "name": "LED2_VCC"
+                      }
+                    ],
+                    "id": "pin6_pb1",
+                    "name": "Pin 6 - PB1/MISO",
+                    "connector_type": "surface_mount"
+                  },
+                  {
+                    "connector_type": "surface_mount",
+                    "name": "Pin 7 - PB2/SCK/SCL",
+                    "id": "pin7_pb2",
+                    "functions": [
+                      {
+                        "direction": "sink",
+                        "signal_class": "digital",
+                        "name": "CLK",
+                        "description": "PB2 SCK (ISP) / SCL (I2C) / GPIO"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "pin8_vcc",
+                    "functions": [
+                      {
+                        "signal_class": "power",
+                        "direction": "sink",
+                        "name": "VCC_5V",
+                        "description": "Power supply (2.7V - 5.5V)"
+                      }
+                    ],
+                    "name": "Pin 8 - VCC",
+                    "connector_type": "surface_mount"
+                  }
+                ],
+                "interfaces": [
+                  {
+                    "id": "mcu_power",
+                    "protocol": {
+                      "role": "input",
+                      "type": "power"
+                    },
+                    "name": "MCU Power",
+                    "description": "Power supply for ATtiny85 (VCC + GND)",
+                    "requires": [
+                      {
+                        "function": "VCC_5V",
+                        "count": 1
+                      },
+                      {
+                        "function": "GND",
+                        "count": 1
+                      }
+                    ]
+                  },
+                  {
+                    "id": "data_io",
+                    "description": "PB0/MOSI/SDA - Primary data line",
+                    "name": "DATA Interface",
+                    "protocol": {
+                      "type": "gpio",
+                      "role": "input"
+                    },
+                    "requires": [
+                      {
+                        "function": "DATA",
+                        "count": 1
+                      }
+                    ]
+                  },
+                  {
+                    "id": "clk_io",
+                    "description": "PB2/SCK/SCL - Clock line",
+                    "protocol": {
+                      "role": "input",
+                      "type": "gpio"
+                    },
+                    "name": "CLK Interface",
+                    "requires": [
+                      {
+                        "count": 1,
+                        "function": "CLK"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "reset_io",
+                    "requires": [
+                      {
+                        "function": "RESET",
+                        "count": 1
+                      }
+                    ],
+                    "name": "RESET Interface",
+                    "protocol": {
+                      "role": "input",
+                      "type": "gpio"
+                    },
+                    "description": "Pin 1 - Active-low reset / chip select"
+                  },
+                  {
+                    "id": "miso_io",
+                    "requires": [
+                      {
+                        "function": "MISO",
+                        "count": 1
+                      }
+                    ],
+                    "name": "MISO Interface",
+                    "protocol": {
+                      "type": "gpio",
+                      "role": "output"
+                    },
+                    "description": "PB1/MISO - Data output for ISP"
+                  },
+                  {
+                    "id": "pwm_io",
+                    "requires": [
+                      {
+                        "function": "GPIO_PWM",
+                        "count": 1
+                      }
+                    ],
+                    "name": "GPIO/PWM Interface",
+                    "protocol": {
+                      "role": "output",
+                      "type": "gpio"
+                    },
+                    "description": "PB4 - PWM output / GPIO"
+                  },
+                  {
+                    "requires": [
+                      {
+                        "function": "ANALOG",
+                        "count": 1
+                      }
+                    ],
+                    "name": "ANALOG Interface",
+                    "protocol": {
+                      "type": "gpio",
+                      "role": "input"
+                    },
+                    "description": "PB3/ADC3 - Analog input / GPIO",
+                    "id": "analog_io"
+                  },
+                  {
+                    "description": "PB0 drives LED 1 anode (shared with DATA pad)",
+                    "protocol": {
+                      "type": "power",
+                      "role": "output"
+                    },
+                    "name": "LED 1 Drive",
+                    "requires": [
+                      {
+                        "count": 1,
+                        "function": "LED1_VCC"
+                      }
+                    ],
+                    "id": "led1_drive"
+                  },
+                  {
+                    "id": "led2_drive",
+                    "requires": [
+                      {
+                        "count": 1,
+                        "function": "LED2_VCC"
+                      }
+                    ],
+                    "description": "PB1 drives LED 2 anode (shared with MISO pad)",
+                    "protocol": {
+                      "type": "power",
+                      "role": "output"
+                    },
+                    "name": "LED 2 Drive"
+                  },
+                  {
+                    "name": "LED 3 Drive",
+                    "protocol": {
+                      "role": "output",
+                      "type": "power"
+                    },
+                    "description": "PB3 drives LED 3 anode (shared with ANALOG pad)",
+                    "requires": [
+                      {
+                        "count": 1,
+                        "function": "LED3_VCC"
+                      }
+                    ],
+                    "id": "led3_drive"
+                  },
+                  {
+                    "id": "led4_drive",
+                    "requires": [
+                      {
+                        "count": 1,
+                        "function": "LED4_VCC"
+                      }
+                    ],
+                    "description": "PB4 drives LED 4 anode (shared with GPIO/PWM pad)",
+                    "protocol": {
+                      "type": "power",
+                      "role": "output"
+                    },
+                    "name": "LED 4 Drive"
+                  }
+                ],
+                "supply_voltage_V": [
+                  2.7,
+                  5.5
+                ],
+                "pin_count": 8,
+                "domain": "electrical"
+              },
+              {
+                "dimensions_mm": {
+                  "height": 1.75,
+                  "length": 5,
+                  "width": 6.2
+                },
+                "domain": "mechanical",
+                "resources": [
+                  {
+                    "connector_type": "surface_mount",
+                    "name": "SOP-8 Package",
+                    "id": "package",
+                    "functions": [
+                      {
+                        "description": "SOP-8 surface mount footprint",
+                        "name": "MOUNT"
+                      }
+                    ]
+                  }
+                ],
+                "interfaces": [
+                  {
+                    "requires": [
+                      {
+                        "count": 1,
+                        "function": "MOUNT"
+                      }
+                    ],
+                    "id": "mounting",
+                    "protocol": {
+                      "role": "mounting_point",
+                      "type": "surface_mount"
+                    },
+                    "name": "PCB Mount"
+                  }
+                ]
+              }
+            ],
+            "usage_notes": "Each GPIO pin (PB0, PB1, PB3, PB4) individually drives an LED. Pins are shared with external pads for ISP programming. GPIO output ~4.2-4.8V at 5V VCC, so LED current through 120ohm resistor will be ~8-13mA (still bright)."
+          },
+          "templateId": "basic-1AGk7mINFuKOXGWMz54X8",
+          "origin": "local",
+          "localVersion": 1,
+          "localVersionTimestamp": 1775253764157,
+          "isDirty": false,
+          "lastLoadedAt": 1775253764157
+        }
+      },
+      "templateMetaById": {
+        "basic-mpjDjlaA2KYMB05qyPX1R": {
+          "origin": "local",
+          "localVersion": 3,
+          "localVersionTimestamp": 1773845917985,
+          "isDirty": true,
+          "lastLoadedAt": 1773845917985
+        },
+        "basic-fFVpV0slY_0ycHSXpgPcp": {
+          "origin": "local",
+          "localVersion": 6,
+          "localVersionTimestamp": 1773849552881,
+          "isDirty": true,
+          "lastLoadedAt": 1773849552881
+        },
+        "basic-PZU-0KuWcc4o6v2QG-GCy": {
+          "origin": "local",
+          "localVersion": 3,
+          "localVersionTimestamp": 1773816930042,
+          "isDirty": true,
+          "lastLoadedAt": 1773816930042
+        },
+        "basic-9aBzuGN5SnidnS1KzTJq9": {
+          "origin": "local",
+          "localVersion": 2,
+          "localVersionTimestamp": 1773845433445,
+          "isDirty": true,
+          "lastLoadedAt": 1773845433445
+        },
+        "basic-5ayJSmQuSXa8oa3WuGRbJ": {
+          "origin": "local",
+          "localVersion": 2,
+          "localVersionTimestamp": 1773845438768,
+          "isDirty": true,
+          "lastLoadedAt": 1773845438768
+        },
+        "basic-gxCY3nvSRgaEtUxKoBtL1": {
+          "origin": "local",
+          "localVersion": 2,
+          "localVersionTimestamp": 1773848534964,
+          "isDirty": true,
+          "lastLoadedAt": 1773848534964
+        },
+        "basic-NLkZFikHo6YDudwjzZbog": {
+          "origin": "local",
+          "localVersion": 2,
+          "localVersionTimestamp": 1773848708575,
+          "isDirty": true,
+          "lastLoadedAt": 1773848708575
+        },
+        "basic-848t6FXjZg-gFcYJHxtV4": {
+          "origin": "local",
+          "localVersion": 3,
+          "localVersionTimestamp": 1775253934504,
+          "isDirty": true,
+          "lastLoadedAt": 1775253934504
+        },
+        "basic-VYPSKHr3RS2GLnCUEqvgd": {
+          "origin": "local",
+          "localVersion": 2,
+          "localVersionTimestamp": 1775253214911,
+          "isDirty": true,
+          "lastLoadedAt": 1775253214911
+        },
+        "basic-IFiLhx3i8ZHFZPVNEg8n0": {
+          "origin": "local",
+          "localVersion": 2,
+          "localVersionTimestamp": 1775253220594,
+          "isDirty": true,
+          "lastLoadedAt": 1775253220594
+        },
+        "basic-rVRacUFPbQDq3LhNcpwAH": {
+          "origin": "local",
+          "localVersion": 2,
+          "localVersionTimestamp": 1775253226873,
+          "isDirty": true,
+          "lastLoadedAt": 1775253226873
+        },
+        "basic-_xR1FA-npyLAzmcU1FuL4": {
+          "origin": "local",
+          "localVersion": 2,
+          "localVersionTimestamp": 1775253233547,
+          "isDirty": true,
+          "lastLoadedAt": 1775253233547
+        },
+        "basic-uaMJdW7PbbgWcAmpVx_dB": {
+          "origin": "local",
+          "localVersion": 2,
+          "localVersionTimestamp": 1775253239848,
+          "isDirty": true,
+          "lastLoadedAt": 1775253239848
+        },
+        "basic-bNdPFE75fJqbc11ZdhxV5": {
+          "origin": "local",
+          "localVersion": 2,
+          "localVersionTimestamp": 1775253245385,
+          "isDirty": true,
+          "lastLoadedAt": 1775253245385
+        },
+        "basic-1AGk7mINFuKOXGWMz54X8": {
+          "origin": "local",
+          "localVersion": 3,
+          "localVersionTimestamp": 1775253764157,
+          "isDirty": true,
+          "lastLoadedAt": 1775253764157
+        }
+      }
+    },
+    "schemaVersion": "1.10.0",
+    "layout": {
+      "nodePositions": {
+        "mpjDjlaA2KYMB05qyPX1R": {
+          "x": -40,
+          "y": 640
+        },
+        "fFVpV0slY_0ycHSXpgPcp": {
+          "x": -40,
+          "y": 840
+        },
+        "842a48f5-d382-4bf9-9696-8d534720b51a": {
+          "x": 210,
+          "y": 640
+        },
+        "21079c84-8285-46f9-b35b-f2867e11d58a": {
+          "x": 680,
+          "y": 620
+        },
+        "34f6db9f-f7ce-4249-b378-d6217756dcc3": {
+          "x": 930,
+          "y": 620
+        },
+        "918fee80-83ac-4a44-922d-a1fe565b6da0": {
+          "x": 210,
+          "y": 840
+        },
+        "08c5ed05-4ea4-46e9-a1fe-907d5e305e15": {
+          "x": 680,
+          "y": 820
+        },
+        "30363942-21cd-47d1-9c1f-62e6f7072dd6": {
+          "x": 930,
+          "y": 820
+        },
+        "NLkZFikHo6YDudwjzZbog": {
+          "x": 400,
+          "y": 0
+        },
+        "848t6FXjZg-gFcYJHxtV4": {
+          "x": 400,
+          "y": 1060
+        },
+        "1AGk7mINFuKOXGWMz54X8": {
+          "x": 400,
+          "y": 300
+        },
+        "bNdPFE75fJqbc11ZdhxV5": {
+          "x": 820,
+          "y": 380
+        },
+        "uaMJdW7PbbgWcAmpVx_dB": {
+          "x": 820,
+          "y": 220
+        },
+        "_xR1FA-npyLAzmcU1FuL4": {
+          "x": 820,
+          "y": 60
+        },
+        "rVRacUFPbQDq3LhNcpwAH": {
+          "x": -40,
+          "y": 360
+        },
+        "IFiLhx3i8ZHFZPVNEg8n0": {
+          "x": -40,
+          "y": 210
+        },
+        "VYPSKHr3RS2GLnCUEqvgd": {
+          "x": -40,
+          "y": 60
+        }
+      },
+      "handleStates": {
+        "mpjDjlaA2KYMB05qyPX1R": {
+          "nodeId": "mpjDjlaA2KYMB05qyPX1R",
+          "staticHandles": {
+            "h-8ddc6a08-b82a-4431-af76-8a6e5fa0aa56-mpjDjlaA2KYMB05qyPX1R": {
+              "position": "bottom",
+              "normalizedPos": {
+                "x": 0.5,
+                "y": 1
+              },
+              "edgeId": "8ddc6a08-b82a-4431-af76-8a6e5fa0aa56"
+            },
+            "h-11f11225-54be-4497-8df6-f8d7246c2fef-mpjDjlaA2KYMB05qyPX1R": {
+              "position": "top",
+              "normalizedPos": {
+                "x": 0.5,
+                "y": 0
+              },
+              "edgeId": "11f11225-54be-4497-8df6-f8d7246c2fef"
+            }
+          },
+          "lastModified": 1776748989374
+        },
+        "fFVpV0slY_0ycHSXpgPcp": {
+          "nodeId": "fFVpV0slY_0ycHSXpgPcp",
+          "staticHandles": {
+            "h-8ddc6a08-b82a-4431-af76-8a6e5fa0aa56-fFVpV0slY_0ycHSXpgPcp": {
+              "position": "top",
+              "normalizedPos": {
+                "x": 0.5,
+                "y": 0
+              },
+              "edgeId": "8ddc6a08-b82a-4431-af76-8a6e5fa0aa56"
+            },
+            "h-d6342336-1647-421b-b794-c708d2fc3487-fFVpV0slY_0ycHSXpgPcp": {
+              "position": "bottom",
+              "normalizedPos": {
+                "x": 0.5184810308762539,
+                "y": 0.9878049710901771
+              },
+              "edgeId": "d6342336-1647-421b-b794-c708d2fc3487"
+            }
+          },
+          "lastModified": 1776748989374
+        },
+        "842a48f5-d382-4bf9-9696-8d534720b51a": {
+          "nodeId": "842a48f5-d382-4bf9-9696-8d534720b51a",
+          "staticHandles": {
+            "h-976801e5-85d7-4629-b184-adda502eecfe-842a48f5-d382-4bf9-9696-8d534720b51a": {
+              "position": "bottom",
+              "normalizedPos": {
+                "x": 0.5,
+                "y": 1
+              },
+              "edgeId": "976801e5-85d7-4629-b184-adda502eecfe"
+            },
+            "h-2539f87f-3b58-42c9-b46c-3a971253b18f-842a48f5-d382-4bf9-9696-8d534720b51a": {
+              "position": "top",
+              "normalizedPos": {
+                "x": 0.5,
+                "y": 0
+              },
+              "edgeId": "2539f87f-3b58-42c9-b46c-3a971253b18f"
+            }
+          },
+          "lastModified": 1776748989374
+        },
+        "21079c84-8285-46f9-b35b-f2867e11d58a": {
+          "nodeId": "21079c84-8285-46f9-b35b-f2867e11d58a",
+          "staticHandles": {
+            "h-76d8ba0f-6cea-4a52-99ad-2108341c2555-21079c84-8285-46f9-b35b-f2867e11d58a": {
+              "position": "bottom",
+              "normalizedPos": {
+                "x": 0.5,
+                "y": 1
+              },
+              "edgeId": "76d8ba0f-6cea-4a52-99ad-2108341c2555"
+            },
+            "h-7878afdc-7b02-4e3f-a3df-ff5c0fa8695c-21079c84-8285-46f9-b35b-f2867e11d58a": {
+              "position": "top",
+              "normalizedPos": {
+                "x": 0.5,
+                "y": 0
+              },
+              "edgeId": "7878afdc-7b02-4e3f-a3df-ff5c0fa8695c"
+            }
+          },
+          "lastModified": 1776748989374
+        },
+        "34f6db9f-f7ce-4249-b378-d6217756dcc3": {
+          "nodeId": "34f6db9f-f7ce-4249-b378-d6217756dcc3",
+          "staticHandles": {
+            "h-f4abd19d-d47b-4b22-8a4f-0e047a52fc30-34f6db9f-f7ce-4249-b378-d6217756dcc3": {
+              "position": "bottom",
+              "normalizedPos": {
+                "x": 0.5,
+                "y": 1
+              },
+              "edgeId": "f4abd19d-d47b-4b22-8a4f-0e047a52fc30"
+            },
+            "h-4e15561c-fdd3-4b27-99c9-53c8afa9ec5e-34f6db9f-f7ce-4249-b378-d6217756dcc3": {
+              "position": "left",
+              "normalizedPos": {
+                "x": 0.006172842248740427,
+                "y": 0.25810130049542684
+              },
+              "edgeId": "4e15561c-fdd3-4b27-99c9-53c8afa9ec5e"
+            }
+          },
+          "lastModified": 1776748989374
+        },
+        "918fee80-83ac-4a44-922d-a1fe565b6da0": {
+          "nodeId": "918fee80-83ac-4a44-922d-a1fe565b6da0",
+          "staticHandles": {
+            "h-976801e5-85d7-4629-b184-adda502eecfe-918fee80-83ac-4a44-922d-a1fe565b6da0": {
+              "position": "top",
+              "normalizedPos": {
+                "x": 0.5,
+                "y": 0
+              },
+              "edgeId": "976801e5-85d7-4629-b184-adda502eecfe"
+            },
+            "h-517f0b6d-98fe-4bff-9247-47f3200a151c-918fee80-83ac-4a44-922d-a1fe565b6da0": {
+              "position": "bottom",
+              "normalizedPos": {
+                "x": 0.5,
+                "y": 1
+              },
+              "edgeId": "517f0b6d-98fe-4bff-9247-47f3200a151c"
+            }
+          },
+          "lastModified": 1776748964351
+        },
+        "08c5ed05-4ea4-46e9-a1fe-907d5e305e15": {
+          "nodeId": "08c5ed05-4ea4-46e9-a1fe-907d5e305e15",
+          "staticHandles": {
+            "h-76d8ba0f-6cea-4a52-99ad-2108341c2555-08c5ed05-4ea4-46e9-a1fe-907d5e305e15": {
+              "position": "top",
+              "normalizedPos": {
+                "x": 0.5,
+                "y": 0
+              },
+              "edgeId": "76d8ba0f-6cea-4a52-99ad-2108341c2555"
+            },
+            "h-e31ba677-1241-496d-88ee-f0572650fbaa-08c5ed05-4ea4-46e9-a1fe-907d5e305e15": {
+              "position": "bottom",
+              "normalizedPos": {
+                "x": 0.5,
+                "y": 1
+              },
+              "edgeId": "e31ba677-1241-496d-88ee-f0572650fbaa"
+            }
+          },
+          "lastModified": 1776748989374
+        },
+        "30363942-21cd-47d1-9c1f-62e6f7072dd6": {
+          "nodeId": "30363942-21cd-47d1-9c1f-62e6f7072dd6",
+          "staticHandles": {
+            "h-f4abd19d-d47b-4b22-8a4f-0e047a52fc30-30363942-21cd-47d1-9c1f-62e6f7072dd6": {
+              "position": "top",
+              "normalizedPos": {
+                "x": 0.5,
+                "y": 0
+              },
+              "edgeId": "f4abd19d-d47b-4b22-8a4f-0e047a52fc30"
+            },
+            "h-b948f70a-56bf-4243-aa66-666eb9f2ed29-30363942-21cd-47d1-9c1f-62e6f7072dd6": {
+              "position": "bottom",
+              "normalizedPos": {
+                "x": 0.3642964304229359,
+                "y": 0.9878049710901771
+              },
+              "edgeId": "b948f70a-56bf-4243-aa66-666eb9f2ed29"
+            }
+          },
+          "lastModified": 1776748989374
+        },
+        "NLkZFikHo6YDudwjzZbog": {
+          "nodeId": "NLkZFikHo6YDudwjzZbog",
+          "staticHandles": {
+            "h-99baf335-9b20-4f97-9e1c-332086bac462-NLkZFikHo6YDudwjzZbog": {
+              "position": "bottom",
+              "normalizedPos": {
+                "x": 0.5,
+                "y": 1
+              },
+              "edgeId": "99baf335-9b20-4f97-9e1c-332086bac462"
+            }
+          },
+          "lastModified": 1776748964351
+        },
+        "848t6FXjZg-gFcYJHxtV4": {
+          "nodeId": "848t6FXjZg-gFcYJHxtV4",
+          "staticHandles": {
+            "h-d6342336-1647-421b-b794-c708d2fc3487-848t6FXjZg-gFcYJHxtV4": {
+              "position": "left",
+              "normalizedPos": {
+                "x": 0,
+                "y": 0.5
+              },
+              "edgeId": "d6342336-1647-421b-b794-c708d2fc3487"
+            },
+            "h-517f0b6d-98fe-4bff-9247-47f3200a151c-848t6FXjZg-gFcYJHxtV4": {
+              "position": "top",
+              "normalizedPos": {
+                "x": 0.15,
+                "y": 0
+              },
+              "edgeId": "517f0b6d-98fe-4bff-9247-47f3200a151c"
+            },
+            "h-e31ba677-1241-496d-88ee-f0572650fbaa-848t6FXjZg-gFcYJHxtV4": {
+              "position": "top",
+              "normalizedPos": {
+                "x": 0.85,
+                "y": 0
+              },
+              "edgeId": "e31ba677-1241-496d-88ee-f0572650fbaa"
+            },
+            "h-b948f70a-56bf-4243-aa66-666eb9f2ed29-848t6FXjZg-gFcYJHxtV4": {
+              "position": "right",
+              "normalizedPos": {
+                "x": 1,
+                "y": 0.5
+              },
+              "edgeId": "b948f70a-56bf-4243-aa66-666eb9f2ed29"
+            },
+            "h-b779221d-1d90-4c91-aeb1-c1e179b33b0d-848t6FXjZg-gFcYJHxtV4": {
+              "position": "top",
+              "normalizedPos": {
+                "x": 0.5,
+                "y": 0
+              },
+              "edgeId": "b779221d-1d90-4c91-aeb1-c1e179b33b0d"
+            }
+          },
+          "lastModified": 1776748989374
+        },
+        "1AGk7mINFuKOXGWMz54X8": {
+          "nodeId": "1AGk7mINFuKOXGWMz54X8",
+          "staticHandles": {
+            "h-pad8-mcu-1AGk7mINFuKOXGWMz54X8": {
+              "position": "right",
+              "normalizedPos": {
+                "x": 1,
+                "y": 0.6166666666666666
+              },
+              "edgeId": "pad8-mcu"
+            },
+            "h-pad7-mcu-1AGk7mINFuKOXGWMz54X8": {
+              "position": "right",
+              "normalizedPos": {
+                "x": 1,
+                "y": 0.3833333333333333
+              },
+              "edgeId": "pad7-mcu"
+            },
+            "h-pad6-mcu-1AGk7mINFuKOXGWMz54X8": {
+              "position": "right",
+              "normalizedPos": {
+                "x": 1,
+                "y": 0.15
+              },
+              "edgeId": "pad6-mcu"
+            },
+            "h-pad5-mcu-1AGk7mINFuKOXGWMz54X8": {
+              "position": "left",
+              "normalizedPos": {
+                "x": 0,
+                "y": 0.85
+              },
+              "edgeId": "pad5-mcu"
+            },
+            "h-edge-1773851707286-4mpz9-1AGk7mINFuKOXGWMz54X8": {
+              "position": "left",
+              "normalizedPos": {
+                "x": 0,
+                "y": 0.5
+              },
+              "edgeId": "edge-1773851707286-4mpz9"
+            },
+            "h-edge-1773851710113-owfrq-1AGk7mINFuKOXGWMz54X8": {
+              "position": "left",
+              "normalizedPos": {
+                "x": 0,
+                "y": 0.15
+              },
+              "edgeId": "edge-1773851710113-owfrq"
+            },
+            "h-99baf335-9b20-4f97-9e1c-332086bac462-1AGk7mINFuKOXGWMz54X8": {
+              "position": "top",
+              "normalizedPos": {
+                "x": 0.5,
+                "y": 0
+              },
+              "edgeId": "99baf335-9b20-4f97-9e1c-332086bac462"
+            },
+            "h-b779221d-1d90-4c91-aeb1-c1e179b33b0d-1AGk7mINFuKOXGWMz54X8": {
+              "position": "bottom",
+              "normalizedPos": {
+                "x": 0.6166666666666666,
+                "y": 1
+              },
+              "edgeId": "b779221d-1d90-4c91-aeb1-c1e179b33b0d"
+            },
+            "h-11f11225-54be-4497-8df6-f8d7246c2fef-1AGk7mINFuKOXGWMz54X8": {
+              "position": "bottom",
+              "normalizedPos": {
+                "x": 0.15,
+                "y": 1
+              },
+              "edgeId": "11f11225-54be-4497-8df6-f8d7246c2fef"
+            },
+            "h-2539f87f-3b58-42c9-b46c-3a971253b18f-1AGk7mINFuKOXGWMz54X8": {
+              "position": "bottom",
+              "normalizedPos": {
+                "x": 0.3833333333333333,
+                "y": 1
+              },
+              "edgeId": "2539f87f-3b58-42c9-b46c-3a971253b18f"
+            },
+            "h-7878afdc-7b02-4e3f-a3df-ff5c0fa8695c-1AGk7mINFuKOXGWMz54X8": {
+              "position": "bottom",
+              "normalizedPos": {
+                "x": 0.8499999999999999,
+                "y": 1
+              },
+              "edgeId": "7878afdc-7b02-4e3f-a3df-ff5c0fa8695c"
+            },
+            "h-4e15561c-fdd3-4b27-99c9-53c8afa9ec5e-1AGk7mINFuKOXGWMz54X8": {
+              "position": "right",
+              "normalizedPos": {
+                "x": 1,
+                "y": 0.8499999999999999
+              },
+              "edgeId": "4e15561c-fdd3-4b27-99c9-53c8afa9ec5e"
+            }
+          },
+          "lastModified": 1776748989374
+        },
+        "bNdPFE75fJqbc11ZdhxV5": {
+          "nodeId": "bNdPFE75fJqbc11ZdhxV5",
+          "staticHandles": {
+            "h-pad8-mcu-bNdPFE75fJqbc11ZdhxV5": {
+              "position": "left",
+              "normalizedPos": {
+                "x": 0,
+                "y": 0.5
+              },
+              "edgeId": "pad8-mcu"
+            }
+          },
+          "lastModified": 1776748964351
+        },
+        "uaMJdW7PbbgWcAmpVx_dB": {
+          "nodeId": "uaMJdW7PbbgWcAmpVx_dB",
+          "staticHandles": {
+            "h-pad7-mcu-uaMJdW7PbbgWcAmpVx_dB": {
+              "position": "left",
+              "normalizedPos": {
+                "x": 0,
+                "y": 0.5
+              },
+              "edgeId": "pad7-mcu"
+            }
+          },
+          "lastModified": 1775254051958
+        },
+        "_xR1FA-npyLAzmcU1FuL4": {
+          "nodeId": "_xR1FA-npyLAzmcU1FuL4",
+          "staticHandles": {
+            "h-pad6-mcu-_xR1FA-npyLAzmcU1FuL4": {
+              "position": "left",
+              "normalizedPos": {
+                "x": 0,
+                "y": 0.5
+              },
+              "edgeId": "pad6-mcu"
+            }
+          },
+          "lastModified": 1776748964351
+        },
+        "rVRacUFPbQDq3LhNcpwAH": {
+          "nodeId": "rVRacUFPbQDq3LhNcpwAH",
+          "staticHandles": {
+            "h-pad5-mcu-rVRacUFPbQDq3LhNcpwAH": {
+              "position": "right",
+              "normalizedPos": {
+                "x": 1,
+                "y": 0.5
+              },
+              "edgeId": "pad5-mcu"
+            }
+          },
+          "lastModified": 1776748963913
+        },
+        "IFiLhx3i8ZHFZPVNEg8n0": {
+          "nodeId": "IFiLhx3i8ZHFZPVNEg8n0",
+          "staticHandles": {
+            "h-edge-1773851707286-4mpz9-IFiLhx3i8ZHFZPVNEg8n0": {
+              "position": "right",
+              "normalizedPos": {
+                "x": 1,
+                "y": 0.5
+              },
+              "edgeId": "edge-1773851707286-4mpz9"
+            }
+          },
+          "lastModified": 1776748964351
+        },
+        "VYPSKHr3RS2GLnCUEqvgd": {
+          "nodeId": "VYPSKHr3RS2GLnCUEqvgd",
+          "staticHandles": {
+            "h-edge-1773851710113-owfrq-VYPSKHr3RS2GLnCUEqvgd": {
+              "position": "right",
+              "normalizedPos": {
+                "x": 1,
+                "y": 0.5
+              },
+              "edgeId": "edge-1773851710113-owfrq"
+            }
+          },
+          "lastModified": 1776748964351
+        }
+      },
+      "viewport": {
+        "x": 474.5692491867984,
+        "y": 90.11123390799389,
+        "zoom": 0.43527528164806334
+      },
+      "lastModified": 1776749015574
+    },
+    "plan": {
+      "requirements": [
+        {
+          "id": "c9e3feb2-688a-4b83-b226-72e1d638b235",
+          "content": "Supply 5V DC power through pogo pin interface to illuminate 4 white LEDs",
+          "status": "validated",
+          "createdAt": 1773815838599
+        },
+        {
+          "id": "e15d97bc-d88f-4038-9e5d-7bcc8056bfab",
+          "content": "Each LED must have a current-limiting resistor to prevent burnout",
+          "status": "validated",
+          "createdAt": 1773815838652
+        },
+        {
+          "id": "e7cc1add-45f1-4389-b9c7-bd2af74fed25",
+          "content": "LEDs must fit within cutouts in middle PCB layer (0603 package: 1.6×0.8×0.55mm)",
+          "status": "validated",
+          "createdAt": 1773815838716
+        },
+        {
+          "id": "7bf24e83-8473-4501-a9f7-10ffe7e79ce1",
+          "content": "Total PCB stack thickness: 3.6mm (0.8 + 2.0 + 0.8mm)",
+          "status": "validated",
+          "createdAt": 1773815838771
+        },
+        {
+          "id": "e9ad549e-b3b5-4ea6-a8d7-d90244ecbbaa",
+          "content": "Bottom surface must be flat with only exposed copper pads for pogo pins",
+          "status": "validated",
+          "createdAt": 1773815838815
+        },
+        {
+          "id": "67857314-1191-4520-8e2e-05b971c74ad3",
+          "content": "Top surface must be flat for silkscreen design application",
+          "status": "validated",
+          "createdAt": 1773815838862
+        },
+        {
+          "id": "f6f0c128-4815-4abd-8cde-c9f0af5c076e",
+          "content": "8-Pad Standard Interface: VCC, GND, DATA, CLK, CS/RST, MISO/GPIO, GPIO/PWM, ANALOG - all 3mm exposed copper pads",
+          "status": "pending",
+          "createdAt": 1775253426911
+        },
+        {
+          "id": "a3b752f8-d61c-45a7-a963-7ebf2f5f6a9b",
+          "content": "ATtiny85 MCU connected to pads 3-8 for ISP programming and LED pulse control",
+          "status": "pending",
+          "createdAt": 1775253428335
+        }
+      ],
+      "tasks": [
+        {
+          "id": "71387617-a82c-465f-9f88-3871ad2ca701",
+          "title": "Finalize LED and resistor component selection from LCSC",
+          "description": "Select 0603 white LEDs (NCD0603W3) and 120Ω current-limiting resistors",
+          "status": "done",
+          "createdAt": 1773815838994,
+          "updatedAt": 1775253405781
+        },
+        {
+          "id": "d38f242a-8c53-4a51-9d0e-326ca6a13dbc",
+          "title": "Design LED circuit schematic",
+          "description": "Create circuit diagram with 4 parallel LED strings, each with series resistor",
+          "status": "done",
+          "createdAt": 1773815839013,
+          "updatedAt": 1775253407085
+        },
+        {
+          "id": "7e8dcb35-5f80-4290-80a4-5233520be9ba",
+          "title": "Define pogo pin pad layout on bottom PCB",
+          "description": "Design 2-pad layout: VCC (5V) and GND. Consider pad size for reliable pogo contact.",
+          "status": "done",
+          "createdAt": 1773815839053,
+          "updatedAt": 1775253408381
+        },
+        {
+          "id": "ad933ed7-3c70-40da-887c-eb5d7e394d27",
+          "title": "Create middle layer cutout pattern",
+          "description": "Design cutouts for 4 LEDs, 4 resistors, and 2 magnets. Verify component fit.",
+          "status": "todo",
+          "createdAt": 1773815839075,
+          "updatedAt": 1773815839075
+        },
+        {
+          "id": "ce203612-f661-47ba-90a1-231cbf244e04",
+          "title": "Route traces on bottom PCB",
+          "description": "Connect pogo pin pads to component positions through vias to top PCB",
+          "status": "todo",
+          "createdAt": 1773815839095,
+          "updatedAt": 1773815839095
+        },
+        {
+          "id": "634a0074-79f5-47d3-9d06-4b1e99a5d422",
+          "title": "Design top PCB silkscreen artwork",
+          "description": "Create logo/design with cutout for LED glow effect",
+          "status": "todo",
+          "createdAt": 1773815839115,
+          "updatedAt": 1773815839115
+        },
+        {
+          "id": "a719322c-1e2b-432b-8b5f-ac7bf3cba4e7",
+          "title": "Generate Gerber files for fabrication",
+          "description": "Export manufacturing files for all 3 PCB layers",
+          "status": "todo",
+          "createdAt": 1773815839136,
+          "updatedAt": 1773815839136
+        },
+        {
+          "id": "761a92ab-953c-4ffd-ae31-4092684c9e06",
+          "title": "Order components from LCSC",
+          "description": "Order 4+ white LEDs (NCD0603W3) and 4+ 120Ω resistors. Order extras for spares.",
+          "status": "todo",
+          "createdAt": 1773815839155,
+          "updatedAt": 1773815839155
+        }
+      ],
+      "tags": [
+        "LED",
+        "PCB",
+        "pogo-pin",
+        "wearable"
+      ],
+      "notes": "## Stack Structure\n- **Top PCB (0.8mm)**: Silkscreen design on top, LEDs/resistors on bottom\n- **Middle PCB (2mm)**: Cutouts for LEDs, resistors, ATtiny85, and magnets; two 15mm x 2mm magnets with opposite polarities\n- **Bottom PCB (0.8mm)**: 8x 3mm copper pads for pogo pins on bottom, traces and optional components on top\n\n## 8-Pad Standard Interface\n| Pad | Signal | ATtiny85 Pin |\n|-----|--------|--------------|\n| 1 | VCC (5V) | Pin 8 |\n| 2 | GND | Pin 4 |\n| 3 | DATA (MOSI/SDA) | Pin 5 (PB0) |\n| 4 | CLK (SCK/SCL) | Pin 7 (PB2) |\n| 5 | CS/RST | Pin 1 (RESET) |\n| 6 | MISO/GPIO | Pin 6 (PB1) |\n| 7 | GPIO/PWM | Pin 3 (PB4) |\n| 8 | ANALOG | Pin 2 (PB3/ADC3) |\n\n## Electrical Specs\n- Supply Voltage: 5V DC via pogo pins\n- LED Configuration: 4x White LEDs in parallel, each with 120ohm resistor\n- Total Current: ~60mA (4 x 15mA)\n- ATtiny85 for V2 pulse effects via PWM on PB4\n\n## LCSC Part Numbers\n- White LED: NCD0603W3 (C158100)\n- 120ohm Resistor: RC0603FR-07120RL (C114640)\n- ATtiny85: ATtiny85-20SU (C89852)"
+    },
+    "lastModified": 1776749015574,
+    "stateVersion": 1651,
+    "conceptImages": {
+      "images": [
+        {
+          "id": "2ed2d386-3756-41d2-acd4-9cb78383882e",
+          "filename": "IMG_4272.jpg",
+          "mimeType": "image/jpeg",
+          "size": 409436,
+          "width": 1215,
+          "height": 1620,
+          "url": "https://firebasestorage.googleapis.com/v0/b/protoboard-delta.firebasestorage.app/o/concept-images%2Fa51160bd-2572-4d82-85fd-8a4d3b5d8dc6%2F2ed2d386-3756-41d2-acd4-9cb78383882e.jpg?alt=media",
+          "storagePath": "concept-images/a51160bd-2572-4d82-85fd-8a4d3b5d8dc6/2ed2d386-3756-41d2-acd4-9cb78383882e.jpg",
+          "uploadedBy": "pCOh7ogceIT44E7xwzadPOtLD8I3",
+          "createdAt": 1773814757543,
+          "updatedAt": 1773814757543
+        },
+        {
+          "id": "7d90ba02-d505-4cbe-becb-050e224bb7e6",
+          "filename": "IMG_4273.jpg",
+          "mimeType": "image/jpeg",
+          "size": 471166,
+          "width": 1215,
+          "height": 1620,
+          "url": "https://firebasestorage.googleapis.com/v0/b/protoboard-delta.firebasestorage.app/o/concept-images%2Fa51160bd-2572-4d82-85fd-8a4d3b5d8dc6%2F7d90ba02-d505-4cbe-becb-050e224bb7e6.jpg?alt=media",
+          "storagePath": "concept-images/a51160bd-2572-4d82-85fd-8a4d3b5d8dc6/7d90ba02-d505-4cbe-becb-050e224bb7e6.jpg",
+          "uploadedBy": "pCOh7ogceIT44E7xwzadPOtLD8I3",
+          "createdAt": 1773814758003,
+          "updatedAt": 1773814758003
+        }
+      ],
+      "lastModified": 1773814758003
+    },
+    "validationFeedback": {
+      "issues": []
+    },
+    "supplierRecords": {}
+  }
+}

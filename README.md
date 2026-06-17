@@ -36,8 +36,14 @@ Higher tiers are a superset of lower ones. A `3.x` chip still mounts in a `2.x` 
 
 1. **Pick a tier** that matches what you want to ship (start at `1.x` or `2.x`).
 2. **Read the spec** for that tier in [`spec/`](spec/) and preserve the [core invariants](spec/README.md#core-invariants): 40 mm diameter, 3.6 mm thickness, polarized orientation.
-3. **Build it.** A `1.x` chip needs only a 3D printer. For a `2.x` magnetic chip, start from the reference CAD - [`chip.step`](hardware/makerchip-2.0/chip.step) and [`dock.step`](hardware/makerchip-2.0/dock.step), or fork the editable [public Onshape project](https://cad.onshape.com/documents/66dffec1c63767f9fad75111/w/110fc95ea174063827d47415/e/8618be80ab8abbf698550313). A `3.x` chip uses the [reference PCB](hardware/pcb-v3/) as a starting point.
+3. **Build it**, starting from the reference design for your tier:
+   - **`1.x`** needs only a 3D printer - grab a print-ready model in [`hardware/makerchip-2.0/`](hardware/makerchip-2.0/).
+   - **`2.x` magnetic** - start from the reference CAD ([`chip.step`](hardware/makerchip-2.0/chip.step), [`dock.step`](hardware/makerchip-2.0/dock.step), and `.3mf` prints), or fork the editable [public Onshape project](https://cad.onshape.com/documents/66dffec1c63767f9fad75111/w/110fc95ea174063827d47415/e/8618be80ab8abbf698550313).
+   - **`3.x` PCB** - **start from the [Protoboard project](https://alpha.protoboard.xyz/board/pCOh7ogceIT44E7xwzadPOtLD8I3/_w6jix_-YGsyXYv-8ICmD)** (see the tip below). The [tscircuit source](hardware/pcb-tscircuit/) and a [KiCad scaffold](hardware/pcb-v3/) are here too.
 4. **Tag your design** `MAJOR.MINOR[-variant]` (for example `MakerChip-3.1-LED-OG`) so others know what it interoperates with.
+
+> [!TIP]
+> **The fastest way to build an electronic chip is the Protoboard project.** Open the [live board](https://alpha.protoboard.xyz/board/pCOh7ogceIT44E7xwzadPOtLD8I3/_w6jix_-YGsyXYv-8ICmD) or import [`maker-chip-pcb-v4.protoboard`](docs/protoboard/maker-chip-pcb-v4.protoboard), and you get the entire system in one place: every part with its **datasheet**, a live **BOM** with vendors and cost, the **system / harness diagram**, and DRC validation. Fork it, swap a part, and everything updates with you. Details in [docs/protoboard/](docs/protoboard/).
 
 ## Documentation
 
@@ -49,10 +55,12 @@ Higher tiers are a superset of lower ones. A `3.x` chip still mounts in a `2.x` 
 | [spec/interface.md](spec/interface.md) | The 8-pad standard electrical interface (>= 3.0) |
 | [spec/docks.md](spec/docks.md) | Docks: the inverse mating part |
 | [spec/roadmap.md](spec/roadmap.md) | Open questions and what must be locked before v2.0 freeze |
-| [hardware/makerchip-2.0/](hardware/makerchip-2.0/) | Chip + dock CAD (STEP) for the 2.x magnetic tier |
+| [docs/protoboard/](docs/protoboard/) | **Protoboard project - the recommended 3.x starting point**: importable file plus BOM, datasheets, and system diagram |
+| [hardware/makerchip-2.0/](hardware/makerchip-2.0/) | Chip + dock CAD (STEP) and print-ready 3MF models for the 2.x magnetic tier |
+| [hardware/pcb-tscircuit/](hardware/pcb-tscircuit/) | The 3.x PCB defined as code (tscircuit source + rendered layer previews) |
 | [hardware/pcb-v3/](hardware/pcb-v3/) | KiCad reference design (3.1-class) |
+| [hardware/accessories/](hardware/accessories/) | Printable extras (chip roll / holder) |
 | [manufacturing/eufy-make-e1/](manufacturing/eufy-make-e1/) | 3D-printable mini bed plate + 14-chip adapter for batch UV printing |
-| [docs/protoboard/](docs/protoboard/) | Snapshot of the live "Maker Chip PCB - V3" Protoboard project |
 
 ## Contributing
 

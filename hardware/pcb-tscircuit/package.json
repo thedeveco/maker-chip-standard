@@ -1,0 +1,26 @@
+{
+  "name": "Maker Chip",
+  "version": "1.0.0",
+  "description": "A tscircuit component package",
+  "main": "index.tsx",
+  "keywords": [
+    "tscircuit",
+    "circuit",
+    "pcb",
+    "electronics"
+  ],
+  "scripts": {
+    "dev": "tsci dev",
+    "build": "tsci build",
+    "snapshot": "tsci snapshot",
+    "snapshot:update": "tsci snapshot --update",
+    "start": "tsci dev",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "opentype.js": "^2.0.0",
+    "svgpath": "^2.6.0",
+    "tscircuit": "^0.0.1786",
+    "typescript": "^5.0.0"
+  }
+}

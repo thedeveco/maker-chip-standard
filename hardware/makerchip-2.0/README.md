@@ -10,6 +10,9 @@ This is the [magnetic standard](../../spec/magnetic.md) realized as solid geomet
 |---|---|
 | `chip.step` | The MakerChip+ 2.0 chip (40 mm, dual 15 x 2 mm magnet pockets) |
 | `dock.step` | The mating dock (inverse magnet pattern for snap-in alignment) |
+| `chip.3mf` | Print-ready MakerChip+ 2.0 chip |
+| `chip-clear.3mf` | Print-ready chip, clear-window variant |
+| `hat-clip-dock.3mf` | Print-ready hat-clip dock (>= 2.0) |
 
 ## Source
 
