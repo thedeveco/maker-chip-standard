@@ -7,9 +7,9 @@ Tooling to UV-print and decorate MakerChip+ chips in batches on the [eufyMake E1
 
 ## What this is
 
-<video src="https://github.com/user-attachments/assets/61c64212-e35d-4e52-ba2b-f503f769d2be" autoplay loop muted playsinline></video>
+![A MakerChip+ adapter plate seating 14 chips above the mini bed, animated assembly loop in hazard cel-shade style](renders/makerchip-assembly-hazard.gif)
 
-A MakerChip+ adapter plate seating 14 chips on the mini bed, rendered in Delta's hazard cel-shade style. A portable looping [GIF](renders/makerchip-assembly-hazard.gif) and the full-quality [mp4](renders/makerchip-assembly-hazard.mp4) are in `renders/`.
+A MakerChip+ adapter plate seating 14 chips on the mini bed, rendered in Delta's hazard cel-shade style. The looping GIF above autoplays; the [full-quality mp4](renders/makerchip-assembly-hazard.mp4) is click-to-play (GitHub does not autoplay video).
 
 ### Mini bed plate (`mini-bed-plate.blend`)
 
@@ -30,8 +30,8 @@ A drop-on adapter that holds **14 MakerChips** in a fixed array for batch UV pri
 | `mini-bed-plate.blend` | The printable mini bed plate (Blender source, ULTIM8 grid) |
 | `adapter-plate.step` | 14-chip adapter with the MakerChip+ magnet pattern |
 | `og-eufy-mini-bed-low-profile-reinforced.stl` | Upstream reference bed this plate is based on |
-| `renders/makerchip-assembly-hazard.gif` | Looping assembly render (portable fallback; renders outside GitHub too) |
-| `renders/makerchip-assembly-hazard.mp4` | Full-quality assembly render (hazard cel-shade style); embedded in the READMEs via GitHub upload |
+| `renders/makerchip-assembly-hazard.gif` | Looping assembly render; embedded in the READMEs (autoplays and loops) |
+| `renders/makerchip-assembly-hazard.mp4` | Full-quality assembly render (hazard cel-shade style); click-to-play |
 | `refs/ultim8-jig-zero-point-calibration.pdf` | Wham Bam ULTIM8 jig zero-point calibration reference (third-party) |
 
 > [!NOTE]
