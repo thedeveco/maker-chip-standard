@@ -3,9 +3,7 @@
 > [!NOTE]
 > **MakerChip+** is an open hardware standard that extends the 40 mm MakerChip / MakerCoin form factor with a polarized magnetic mount, a stacked-PCB electronics tier, onboard power, and motion. A printed token can grow into a full system component while staying interoperable across creators, docks, and forks.
 
-<video src="https://github.com/thedeveco/maker-chip-standard/raw/main/manufacturing/eufy-make-e1/renders/makerchip-assembly-hazard.mp4" controls muted></video>
-
-[Watch the assembly render](manufacturing/eufy-make-e1/renders/makerchip-assembly-hazard.mp4) if the player does not load.
+![A MakerChip+ adapter plate seating 14 chips above a 3D-printable eufyMake E1 mini bed, animated assembly loop in hazard cel-shade style](manufacturing/eufy-make-e1/renders/makerchip-assembly-hazard.gif)
 
 > [!NOTE]
 > A MakerChip+ adapter plate seating 14 chips on a 3D-printable eufyMake E1 mini bed, rendered in Delta's hazard cel-shade style. The mini bed carries the same grid pattern as the ULTIM8 jig for cross-compatibility, and the adapter uses the MakerChip+ magnet pattern so every chip snaps into alignment. Both are in active development and testing. See [manufacturing/eufy-make-e1/](manufacturing/eufy-make-e1/).

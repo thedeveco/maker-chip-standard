@@ -6,6 +6,7 @@
 *.stl  binary
 *.blend binary
 *.mp4  binary
+*.gif  binary
 *.pdf  binary
 *.png  binary
 
